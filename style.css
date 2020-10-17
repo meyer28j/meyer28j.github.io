@@ -22,7 +22,7 @@ header, footer {
     transition-duration: 0.2s;
 }
 .icon:hover {
-    color: lavender;
+    color: rgb(160, 160, 160);
     transition-duration: 0.2s;
 }
 
@@ -32,9 +32,36 @@ header, footer {
     grid-auto-rows: auto;
 }
 
-.center {
-    margin: 20px 20% 20px 20%;
+.gutters {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
+.left {
+    text-align: left;
+}
+
+.center {
+    /* margin: 20px 20% 20px 20%;*/
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatCenter {
+    float: center;
+}
+
+.floatRight {
+    float: right;
 }
 
 section {
@@ -67,7 +94,6 @@ section.parallax {
 
 section.classes {
     font-size: large;
-    text-align: center;
     color: white;
 }
 
@@ -90,14 +116,14 @@ section.classes.complete {
 }
 
 .classesTable {
-    float: center;
-}
+    text-align: center;
+    }
 
 .classesTable td {
     padding: 6px;
     max-width: 140px;
 }
-
+/*
 article.left {
     float: left;
 }
@@ -109,7 +135,7 @@ article.center {
 article.right {
     float: right;
 }
-
+*/
 img.side {
     width: auto;
     object-fit: cover;
