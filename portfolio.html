@@ -7,30 +7,36 @@
     <!--<link rel="stylesheet" href="styles.css>-->
 </head>
 <body>
- 	<nav>
-		<a href="index.html"><img class="logo" src="img/logo.png"/></a>
-		<ul>
-			<a href="portfolio.html">Portfolio</a>
-			<a href="skills-experience.html">Skills & Work Experience</a>
-		</ul>
-		<button type="button">Grab My Resume</button>
-        <a href="javascript:void(0)"><span class="fa-solid fa-bars"></span></a>
-	</nav>
 
-        <header>
-            <h1>Portfolio</h1>
-            <h2>Portfolio Subtitle</h2>
-            <p>PORTFOLIO TEXT!!!!!!</p>
-        </header>
+    <nav>
+        <a class="logo-link" href="index.html"><img class="logo" src="img/logo.png"/></a>
+        <button type="button">Grab My Resume</button>
+        <div id="menuContainer" class="menu">
+            <ul class="menu-links">
+                <a href="index.html" class="menu-item">Home</a>
+                <a href="portfolio.html" class="menu-item">Portfolio</a>
+                <a href="skills-experience.html" class="menu-item">Skills & Experience</a>
+            </ul>
+        </div>
+        <a href="javascript:void(0)" class="menu-hamburger" onclick="toggleMenu()">
+            <span class="fa-solid fa-bars"></span>
+        </a>
+    </nav>
+
+    <header>
+        <h1>Portfolio</h1>
+        <h2>Portfolio Subtitle</h2>
+        <p>PORTFOLIO TEXT!!!!!!</p>
+    </header>
     
-        <aside class="sidebar">
-            <h3>Sidebar Attention Grabber</h3>
-            <p>Here's a bunch of nonsense about how I'm cool or whatever and you should hire me. I use arch btw.</p>
-            <button type="button">[maybe too much] Grab My Resume</button>
-            <a href="https://github.com/meyer28j"><img class="logo-link-github" src="img/logo-github.png"></a>
-            <a href=""><img class="logo-link" src="img/logo-link2.png"></a>
-            <a href="https://github.com/meyer28j"><img class="logo-link" src="img/logo-link3.png"></a>
-        </aside>
+    <aside class="sidebar">
+        <h3>Sidebar Attention Grabber</h3>
+        <p>Here's a bunch of nonsense about how I'm cool or whatever and you should hire me. I use arch btw.</p>
+        <button type="button">[maybe too much] Grab My Resume</button>
+        <a href="https://github.com/meyer28j"><img class="logo-link-github" src="img/logo-github.png"></a>
+        <a href=""><img class="logo-link" src="img/logo-link2.png"></a>
+        <a href="https://github.com/meyer28j"><img class="logo-link" src="img/logo-link3.png"></a>
+    </aside>
 
     <main>
         <section>

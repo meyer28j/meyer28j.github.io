@@ -7,16 +7,21 @@
     <!--<link rel="stylesheet" href="styles.css>-->
 </head>
 <body>
-    <nav>
-        <a href="index.html"><img class="logo" src="img/logo.png"/></a>
-        <ul>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="skills-experience.html">Skills & Work Experience</a>
-        </ul>
-        <button type="button">Grab My Resume</button>
-        <a href="javascript:void(0)"><span class="fa-solid fa-bars"></span></a>
-    </nav>
 
+    <nav>
+        <a class="logo-link" href="index.html"><img class="logo" src="img/logo.png"/></a>
+        <button type="button">Grab My Resume</button>
+        <div id="menuContainer" class="menu">
+            <ul class="menu-links">
+                <a href="index.html" class="menu-item">Home</a>
+                <a href="portfolio.html" class="menu-item">Portfolio</a>
+                <a href="skills-experience.html" class="menu-item">Skills & Experience</a>
+            </ul>
+        </div>
+        <a href="javascript:void(0)" class="menu-hamburger" onclick="toggleMenu()">
+            <span class="fa-solid fa-bars"></span>
+        </a>
+    </nav>
 
     <header>
         <h1>Skills</h1>
