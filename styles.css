@@ -1,6 +1,8 @@
+/* apply outline to all elements for visualization
 * {
     border: 1px solid black;
-}
+} 
+*/
 
 body {
     display: grid;
@@ -13,6 +15,7 @@ body {
         "main"
         "footer";
     margin: auto; /* center body in viewport */
+    margin-top: 80px; /* ensure body is underneath navbar */
     max-width: 575px; /* upper limit for mobile-first view */
 }
 
@@ -30,7 +33,6 @@ nav {
     left: 0;
     width: 100%;
     height: auto;
-    min-height: 80px;
     background-color: #d9d9d9;
 }
 
@@ -43,6 +45,12 @@ nav .logo-link {
     max-height: 100%;
     max-width: 100%;
     margin: 10px;
+}
+
+nav .logo {
+    border-radius: 100%;
+    max-width: 60px;
+    max-height: auto;
 }
 
 nav .resume-button {
@@ -188,7 +196,8 @@ main * {
 }
 
 .skills-container {
-    display: flex
+    display: flex;
+    flex-direction: column;
 }
 
 .split-screen {
@@ -223,5 +232,5 @@ footer {
     justify-content: stretch;
     align-items: center;
     padding: 20px;
-
+    background-color: #d6d6d6;
 }
