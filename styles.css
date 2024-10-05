@@ -19,6 +19,7 @@ body {
 /* start navigation */
 
 nav {
+    grid-area: nav;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -56,16 +57,6 @@ nav .menu-hamburger {
     background-color: #666666;
 }
 
-/*
-nav ul {
-    list-style-type: none;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    width: 200px;
-}
-*/
-
 nav .menu {
     position: absolute;
     top: 0;
@@ -94,6 +85,7 @@ nav .menu-item {
 /* end navigation */
 
 header {
+    grid-area: header;
     margin-top: 80px; /* avoid content overlay with nav */
 }
 
@@ -118,6 +110,7 @@ header {
 }
 
 aside {
+    grid-area: aside;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -129,6 +122,12 @@ aside {
     flex-direction: row;
     justify-content: center;
     column-gap: 10px;
+    list-style-type: none;
+    padding-left: 0; /* remove ul element padding */
+}
+
+main {
+    grid-area: main;
 }
 
 main * {
@@ -143,7 +142,7 @@ main * {
 }
 
 .banner-image {
-    width: 100%; 
+    width: auto; 
     height: auto;
     max-height: 400px;
     object-fit: cover;
@@ -196,7 +195,7 @@ main * {
     display: flex;
     flex-direction: row;
     justify-content: space-around; /* push image to edge of page */
-    width: 100%;
+    width: auto;
 }
 
 .split-screen img {
@@ -218,11 +217,11 @@ main * {
 }
 
 footer {
+    grid-area: footer;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    width: 100%;
+    justify-content: stretch;
+    align-items: center;
     padding: 20px;
 
 }
