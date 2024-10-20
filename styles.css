@@ -69,20 +69,14 @@ nav .resume-button {
 }
 
 nav .menu-hamburger {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     text-decoration: none;
     aspect-ratio: 1;
     color: black;
     background-color: #666666;
-}
-
-nav .menu-icon {
-    font-size: 100%;
-    width: 100%;
-    height: auto;
-    padding: 10px;
-
 }
 
 nav .menu-container {
