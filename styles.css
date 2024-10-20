@@ -1,6 +1,5 @@
-/* apply outline to all elements for visualization */
 * {
-    border: 1px solid black;
+    border: 1px solid black; /* apply outline to all elements for visualization */
 } 
 
 body {
@@ -18,8 +17,66 @@ body {
     /*max-width: 575px; /* upper limit for mobile-first view */
 }
 
-/* start navigation */
+/* generic elements used in multiple sections */
+.resume-button {
+    display: block;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: royalblue;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
 
+.resume-button:hover {
+    background-color: #477998;
+}
+
+.banner-image {
+    width: auto; 
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    min-width: 350px;
+}
+
+.card img {
+    max-width: 350px; 
+    height: auto;
+    object-fit: cover;
+}
+
+.split-screen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* push image to edge of page */
+    width: auto;
+}
+
+.split-screen img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.split-screen-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+/* navigation content */
 nav {
     grid-area: nav;
     display: flex;
@@ -60,14 +117,6 @@ nav .button-container {
     height: 100%;
 }
 
-nav .resume-link {
-
-}
-
-nav .resume-button {
-
-}
-
 nav .menu-hamburger {
     display: flex;
     justify-content: center;
@@ -102,8 +151,8 @@ nav .menu-item {
     padding: 10px 0 10px 0;
     text-decoration: none;
 }
-/* end navigation */
 
+/* header section */
 header {
     grid-area: header;
     margin-top: 80px; /* avoid content overlay with nav */
@@ -129,6 +178,7 @@ header {
     object-fit: cover;
 }
 
+/* sidebar content */
 aside {
     grid-area: aside;
     display: flex;
@@ -151,6 +201,7 @@ aside {
     text-decoration: none;
 }
 
+/* main content */
 main {
     grid-area: main;
 }
@@ -160,20 +211,14 @@ main * {
     margin: 5px;
 }
 
+/* about section */
 .about-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.banner-image {
-    width: auto; 
-    height: auto;
-    max-height: 400px;
-    object-fit: cover;
-
-}
-
+/* project section */
 .project-container {
     display: grid;
     grid-template-columns: auto;
@@ -189,21 +234,6 @@ main * {
     grid-area: h2;
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 450px;
-    min-width: 350px;
-}
-
-.card img {
-    max-width: 350px; 
-    height: auto;
-    object-fit: cover;
-}
-
 .project-card1 {
     grid-area: project-card1;
 }
@@ -212,36 +242,17 @@ main * {
     grid-area: project-card2;
 }
 
+/* skills section */
 .skills-container {
     display: flex;
     flex-direction: column;
-}
-
-.split-screen {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; /* push image to edge of page */
-    width: auto;
-}
-
-.split-screen img {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-}
-
-.split-screen-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
 }
 
 .skills1 {
     grid-area: skills1;
 }
 
+/* footer section */
 footer {
     grid-area: footer;
     display: flex;
