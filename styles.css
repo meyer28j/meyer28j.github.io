@@ -1,8 +1,7 @@
-/* apply outline to all elements for visualization
+/* apply outline to all elements for visualization */
 * {
     border: 1px solid black;
 } 
-*/
 
 body {
     display: grid;
@@ -16,7 +15,7 @@ body {
         "footer";
     margin: auto; /* center body in viewport */
     margin-top: 80px; /* ensure body is underneath navbar */
-    max-width: 575px; /* upper limit for mobile-first view */
+    /*max-width: 575px; /* upper limit for mobile-first view */
 }
 
 /* start navigation */
@@ -32,7 +31,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 80px;
     background-color: #d9d9d9;
 }
 
@@ -40,7 +39,6 @@ nav .logo-link {
     text-decoration: none;
     color: black;
     height: auto;
-    flex-shrink: 1;
     object-fit: contain;
     max-height: 100%;
     max-width: 100%;
@@ -53,31 +51,50 @@ nav .logo {
     max-height: auto;
 }
 
+nav .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    height: 100%;
+}
+
+nav .resume-link {
+
+}
+
 nav .resume-button {
-    margin-left: auto;
+
 }
 
 nav .menu-hamburger {
     display: block;
-    padding: 10px;
+    height: 100%;
     text-decoration: none;
+    aspect-ratio: 1;
     color: black;
     background-color: #666666;
 }
 
-nav .menu {
+nav .menu-icon {
+    font-size: 100%;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+
+}
+
+nav .menu-container {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 0;
-    margin-top: 80px; /*height of nav*/
+    margin: 80px 0 0 0; /*height of nav*/
     display: none;
     background-color: #adebad;
 }
 
 nav .menu-links {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
     width: 200px;
@@ -89,6 +106,7 @@ nav .menu-item {
     display: block; /*make each element block clickable*/
     width: 100%;
     padding: 10px 0 10px 0;
+    text-decoration: none;
 }
 /* end navigation */
 
@@ -113,7 +131,7 @@ header {
     max-width: 300px;
     width: 100%;
     height: auto;
-    aspect-ratio: 1 / 1; /* square aspect ratio */
+    aspect-ratio: 1; /* square aspect ratio */
     object-fit: cover;
 }
 
@@ -159,12 +177,12 @@ main * {
 
 .project-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas:
-    "h2 h2"
-    "project-card1 project-card1"
-    "project-card2 project-card2";
+    "h2"
+    "project-card1"
+    "project-card2";
     justify-items: center;
 }
 
