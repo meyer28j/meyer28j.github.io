@@ -1,5 +1,5 @@
 * {
-    border: 1px solid black; /* apply outline to all elements for visualization */
+    /*border: 1px solid black; /* apply outline to all elements for visualization */
 } 
 
 body {
@@ -171,7 +171,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     border-radius: 100%;
-    max-width: 300px;
+    max-width: 250px;
     width: 100%;
     height: auto;
     aspect-ratio: 1; /* square aspect ratio */
@@ -244,8 +244,18 @@ main * {
 
 /* skills section */
 .skills-container {
+    /*
     display: flex;
     flex-direction: column;
+    */
+}
+
+.skills-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
 }
 
 .skills1 {
