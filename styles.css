@@ -18,6 +18,22 @@ body {
     /*max-width: 575px; /* upper limit for mobile-first view */
 }
 
+/* tablet */
+@media (min-width: 576px) {
+    body {
+        grid-template-areas:
+        "nav nav nav nav nav"
+        "header header header header aside"
+        "main main main main main"
+        "footer footer footer footer footer";
+    }
+}
+
+/* desktop */
+@media (min-width: 1200px) {
+
+}
+
 /* generic elements used in multiple sections */
 .button {
     display: block;
@@ -35,7 +51,8 @@ body {
     color: white;
 }
 
-.button-resume:hover {
+.button-resume:hover,
+.button-resume:active {
     background-color: #3352af;
 }
 
@@ -43,7 +60,8 @@ body {
     background-color: tomato;
 }
 
-.button-link:hover {
+.button-link:hover, 
+.button-link:active {
     background-color: crimson;
 }
 
@@ -61,6 +79,7 @@ body {
     color: oldlace;
 }
 
+.logo-icon:hover,
 .logo-icon:active {
     color: darkgrey;
 }
@@ -91,7 +110,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around; /* push image to edge of page */
-    width: auto;
 }
 
 .split-screen img {
@@ -183,6 +201,7 @@ nav .menu-item {
     text-decoration: none;
 }
 
+nav .menu-item:hover,
 nav .menu-item:active {
     background-color: #756361;
 }
@@ -229,6 +248,22 @@ aside {
 main {
     grid-area: main;
 }
+
+/* tablet */
+@media (min-width: 576px) {
+    main {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        
+    }
+}
+
+/* desktop */
+@media (min-width: 1200px) {
+
+}
+
 
 main * {
     padding: 5px;
