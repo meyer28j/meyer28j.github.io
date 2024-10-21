@@ -251,6 +251,7 @@ main * {
     "project-card1"
     "project-card2";
     justify-items: center;
+    background-color: lightsteelblue;
 }
 
 .project-container h2 {
@@ -279,6 +280,8 @@ main * {
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
+    color: white;
+    background-color: #f64740;
 }
 
 /* footer section */
