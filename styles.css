@@ -14,7 +14,7 @@ body {
         "main"
         "footer";
     margin: auto; /* center body in viewport */
-    margin-top: 80px; /* ensure body is underneath navbar */
+    margin-top: 60px; /* ensure body is underneath navbar */
     /*max-width: 575px; /* upper limit for mobile-first view */
 }
 
@@ -31,7 +31,7 @@ body {
     background-color: royalblue;
     color: white;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
 }
 
 .button-resume:hover {
@@ -101,24 +101,22 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px;
-    background-color: #d9d9d9;
+    height: 60px;
+    background-color: #291f1e;
 }
 
 nav .logo-link {
     text-decoration: none;
     color: black;
-    height: auto;
     object-fit: contain;
-    max-height: 100%;
-    max-width: 100%;
-    margin: 10px;
+    height: 100%;
 }
 
 nav .logo {
     border-radius: 100%;
-    max-width: 60px;
-    max-height: auto;
+    max-height: 50px;
+    max-width: auto;
+    margin: 5px;
 }
 
 nav .button-container {
@@ -138,14 +136,14 @@ nav .menu-hamburger {
     text-decoration: none;
     aspect-ratio: 1;
     color: black;
-    background-color: #666666;
+    background-color: #c4c4c4;
 }
 
 nav .menu-container {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 80px 0 0 0; /*height of nav*/
+    margin: 60px 0 0 0; /*height of nav*/
     display: none;
     background-color: #adebad;
 }
@@ -168,7 +166,7 @@ nav .menu-item {
 /* header section */
 header {
     grid-area: header;
-    margin-top: 80px; /* avoid content overlay with nav */
+    margin-top: 60px; /* avoid content overlay with nav */
 }
 
 .welcome-container {
