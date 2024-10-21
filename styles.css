@@ -22,16 +22,17 @@ body {
 .button {
     display: block;
     border-radius: 20px;
+    margin: 5px;
     padding: 12px;
     text-decoration: none;
     color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 
 .button-resume {
     background-color: royalblue;
     color: white;
-    font-weight: bold;
-    font-size: 0.9rem;
 }
 
 .button-resume:hover {
