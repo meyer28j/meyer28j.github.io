@@ -46,6 +46,24 @@ body {
     background-color: crimson;
 }
 
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.logo-icon {
+    height: auto;
+    color: oldlace;
+}
+
+.logo-icon:active {
+    color: darkgrey;
+}
+
 .banner-image {
     width: auto; 
     height: auto;
@@ -201,20 +219,9 @@ aside {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-}
-
-.logo-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin: 10px;
-}
-
-.logo {
-    height: auto;
-    text-decoration: none;
+    padding: 10px;
+    background-color: #2c2626;
+    color: white;
 }
 
 /* main content */
@@ -272,10 +279,6 @@ main * {
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-}
-
-.skills1 {
-    grid-area: skills1;
 }
 
 /* footer section */
