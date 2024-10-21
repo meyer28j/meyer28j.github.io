@@ -18,19 +18,31 @@ body {
 }
 
 /* generic elements used in multiple sections */
-.resume-button {
+.button {
     display: block;
     border-radius: 20px;
     padding: 10px;
-    background-color: royalblue;
+    text-decoration: none;
+    color: white;
+}
+
+.button-resume {
+    background-color: dodgerblue;
     color: white;
     font-weight: bold;
     font-size: 1.2rem;
-    text-decoration: none;
 }
 
-.resume-button:hover {
-    background-color: #477998;
+.button-resume:hover {
+    background-color: royalblue;
+}
+
+.button-link {
+    background-color: tomato;
+}
+
+.button-link:hover {
+    background-color: crimson;
 }
 
 .banner-image {
