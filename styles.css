@@ -21,20 +21,20 @@ body {
 .button {
     display: block;
     border-radius: 20px;
-    padding: 10px;
+    padding: 12px;
     text-decoration: none;
     color: white;
 }
 
 .button-resume {
-    background-color: dodgerblue;
+    background-color: royalblue;
     color: white;
     font-weight: bold;
     font-size: 1.2rem;
 }
 
 .button-resume:hover {
-    background-color: royalblue;
+    background-color: #3352af;
 }
 
 .button-link {
