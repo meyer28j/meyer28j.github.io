@@ -387,6 +387,20 @@ footer {
         max-width: 350px;
     }
 
+    .experience-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experience-container img {
+        max-height: 500px;
+        flex-shrink: 1;
+    }
+
+    .experience-container .split-screen-body {
+        justify-content: flex-start;
+    }
+
     footer {
         z-index: 10;
     }
