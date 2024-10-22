@@ -3,6 +3,13 @@
     font-family: Arial, Helvetica, sans-serif;
 } 
 
+html {
+    /* set background to sidebar color so
+     * it fits when screen expanded beyond
+     * maximum width */
+    background-color: #2c2626;
+}
+
 body {
     display: grid;
     grid-template-columns: auto;
@@ -15,7 +22,12 @@ body {
         "footer";
     margin: auto; /* center body in viewport */
     margin-top: 60px; /* ensure body is underneath navbar */
-    /*max-width: 575px; /* upper limit for mobile-first view */
+    max-width: 1320px; /* bootstrap standard */
+    /* set background to off-white so it's
+     * easier on the eyes and to put a normal
+     * color over the above html background
+     * color */
+    background-color: #DFDFDF;
 }
 
 /* generic elements used in multiple sections */
