@@ -8,6 +8,14 @@ Media queries were added for tablet and desktop view. Much of the "work" done to
 
 Some content still does not match the wireframes as many of the content was shuffled around when moving everything to one page.
 
+### Browser Testing
+
+This webpage was tested on:
+1. Firefox
+2. Brave (Chromium)
+
+No issues were seen.
+
 ## Assignment 2 Changes
 
 1. All pages combined to reduce content amount
