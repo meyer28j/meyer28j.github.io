@@ -291,14 +291,7 @@ main * {
 }
 
 /* skills section */
-.skills-container {
-    /*
-    display: flex;
-    flex-direction: column;
-    */
-}
-
-.skills-header {
+.skills-item-header {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -361,7 +354,7 @@ footer {
     aside {
         justify-content: flex-start;
         padding-top: 20vh;
-        position: -webkit-sticky; /* safari */
+        position: --webkit-sticky; /* safari */
         position: sticky;
         top: 60px;
         height: 100vh;
@@ -373,23 +366,25 @@ footer {
         grid-template-areas:    
     }
 
-    /* 
-    .project-container {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-template-areas:
-        "project-header"
-        "projects";
-        grid-gap: 10px;
-    }*/
-
     .projects {
         flex-direction: row;
         flex-wrap: wrap;
+    }
 
     .project-container img {
         max-height: 300px;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .skill-item {
+        max-width: 350px;
     }
 
     footer {
