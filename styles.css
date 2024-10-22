@@ -249,29 +249,33 @@ main * {
     justify-content: center;
 }
 
+.about1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* project section */
 .project-container {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas:
-    "h2"
-    "project-card1"
-    "project-card2";
-    justify-items: center;
+    "project-header"
+    "projects";
+    justify-content: center;
     background-color: lightsteelblue;
 }
 
-.project-container h2 {
-    grid-area: h2;
+.project-header {
+    grid-area: project-header;
 }
 
-.project-card1 {
-    grid-area: project-card1;
-}
-
-.project-card2 {
-    grid-area: project-card2;
+.projects {
+    grid-area: projects;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* skills section */
@@ -335,7 +339,7 @@ footer {
     nav .menu-item {
         display: flex;
         align-items: center;
-        padding: 10px;
+        padding: 20px;
     }
 
     nav .menu-hamburger {
@@ -357,6 +361,25 @@ footer {
         grid-template-areas:    
     }
 
+    /* 
+    .project-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "project-header"
+        "projects";
+        grid-gap: 10px;
+    }*/
+
+    .projects {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    .project-container img {
+        max-height: 300px;
+    }
+
     footer {
         z-index: 10;
     }
@@ -371,5 +394,43 @@ footer {
         "header aside"
         "main aside"
         "footer footer"
+    }
+
+    .about-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "about1 about1"
+        "about2 about3"; 
+        gap: 5vw;
+        justify-items: start;
+    }
+
+    .about-container img {
+        max-height: 300px;
+    }
+
+    .about1 {
+        grid-area: about1;
+    }
+
+    .about2 {
+        grid-area: about2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .about3 {
+        grid-area: about3;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    /* force image to top of flex column */
+    .about3 img {
+        order: -1;
     }
 }
