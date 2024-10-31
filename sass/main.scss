@@ -2,9 +2,9 @@
 imports all partials and compiles into main.css
 */
 
-@use 'sass/colors.scss' as colors;
-@use 'sass/layout.scss';
-@use 'sass/base.scss';
+@use 'colors.scss' as colors;
+@use 'layout.scss';
+@use 'base.scss';
 
 * {
     /*border: 1px solid black; /* apply outline to all elements for visualization */
