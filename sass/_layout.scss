@@ -2,6 +2,8 @@
 organize all section layouts
 */
 
+@use 'spacing.scss' as sizes;
+
 $breakpoint-md: 576px;
 $breakpoint-lg: 1200px;
 
@@ -35,19 +37,19 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: sizes.$md;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px;
+    height: $nav-height;
     z-index: 100; 
 
     .button-container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 20px;
+        gap: sizes.$md;
         align-items: center;
         height: 100%;
     }
@@ -146,7 +148,7 @@ main {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    gap: sizes.$sm;
 }
 
 footer {
@@ -190,7 +192,7 @@ footer {
     nav .menu-item {
         display: flex;
         align-items: center;
-        padding: 20px;
+        padding: sizes.$md;
     }
 
     nav .menu-hamburger {

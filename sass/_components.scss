@@ -3,12 +3,12 @@ create generic components used in multiple sections
 */
 
 @use 'colors.scss' as colors;
-
+@use 'spacing.scss' as sizes;
 .button {
     display: block;
     border-radius: 20px;
-    margin: 5px;
-    padding: 12px;
+    margin: sizes.$sm;
+    padding: sizes.$sm-btn;
     text-decoration: none;
     color: colors.$text-light;
     font-weight: bold;
@@ -36,8 +36,8 @@ create generic components used in multiple sections
 }
 
 .logo-container {
-    gap: 10px;
-    margin: 10px;
+    gap: sizes.$sm;
+    margin: sizes.$sm;
 }
 
 .logo-icon {
