@@ -1,5 +1,17 @@
 # meyer28j.github.io
 
+## Assignment 4 Changes
+
+The primary styles.css file was refactored into many partial SASS files under sass/ then collected and compiled through sass/main.scss into the final stylesheet main.css. The SASS files are organized by function rather than section, with classes being modified in specific ways within each partial file.
+
+Partial SASS files:
+1. \_colors.scss - stores all variables for colors to be applied in \_base.scss
+2. \_layout.scss - handles grid/flexbox layout parameters for all major sections and containers. It does NOT include some flexbox structures used for small components, such as aligning logos within their container.
+3. \_components.scss - configures all generic component classes such as cards and split-screen
+4. \_base.scss - applies the other partials and handles the remaining CSS not covered, such as applying color to components
+5. \_main.scss - imports all partials to be compiled into the final main.css
+
+
 ## Assignment 3 Changes
 
 This assignment changed many of the flexbox/CSS grid structures as needed. In many places, flexbox was introduced to simply center content or line up one or two elements in a row. 
