@@ -1,9 +1,219 @@
 /* main.scss
 imports all partials and compiles into main.css
 */
+/* _base.scss
+foundational styles for whole document
+*/
 /* sass/_colors.scss
 contains any resuable values, e.g. colors, etc
 */
+* {
+  /*border: 1px solid black; /* apply outline to all elements for visualization during debugging */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  /* set background to sidebar color so
+   * it fits when screen expanded beyond
+   * maximum width */
+  background-color: #2c2626;
+}
+
+body {
+  /* set background to off-white so it's
+   * easier on the eyes and to put a normal
+   * color over the above html background
+   * color */
+  background-color: #EFEFEF;
+}
+
+/* navigation content */
+nav {
+  background-color: #291f1e;
+}
+
+nav .logo-link {
+  text-decoration: none;
+  height: 100%;
+}
+
+nav .logo {
+  border-radius: 100%;
+  max-height: 50px;
+  max-width: auto;
+  margin: 5px;
+}
+
+nav .menu-hamburger {
+  text-decoration: none;
+  aspect-ratio: 1;
+  color: #dee8f7;
+  background-color: #142b71;
+}
+
+nav .menu-container {
+  background-color: #4c3837;
+}
+
+nav .menu-links {
+  margin: 0;
+  padding: 0;
+}
+
+nav .menu-item {
+  color: white;
+  text-decoration: none;
+  padding: 16px 0 16px 0;
+}
+
+nav .menu-item:hover,
+nav .menu-item:active {
+  background-color: #756361;
+}
+
+/* welcome content */
+header {
+  padding: 10px;
+}
+
+.welcome-container {
+  text-align: center;
+}
+
+.img-welcome {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1; /* square aspect ratio */
+  object-fit: cover;
+}
+
+/* sidebar content */
+aside {
+  text-align: center;
+  padding: 10px;
+  background-color: #2c2626;
+  color: white;
+}
+
+/* main content */
+main * {
+  padding: 10px;
+}
+
+/* project section */
+.project-container {
+  background-color: lightsteelblue;
+}
+
+/* skills section */
+.skills-item-header {
+  color: white;
+  background-color: #f64740;
+}
+
+/* footer section */
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #223877;
+}
+
+/* _components.scss
+create generic components used in multiple sections
+*/
+.button {
+  display: block;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.button-resume {
+  background-color: royalblue;
+  color: white;
+}
+
+.button-resume:hover,
+.button-resume:active {
+  background-color: #3352af;
+}
+
+.button-link {
+  background-color: tomato;
+}
+
+.button-link:hover,
+.button-link:active {
+  background-color: crimson;
+}
+
+.logo-container {
+  gap: 10px;
+  margin: 10px;
+}
+
+.logo-icon {
+  height: auto;
+  color: oldlace;
+}
+
+.logo-icon:hover,
+.logo-icon:active {
+  color: darkgrey;
+}
+
+.banner-image {
+  width: auto;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  min-width: 350px;
+}
+
+.card img {
+  max-width: 350px;
+  height: auto;
+  object-fit: cover;
+}
+
+.split-screen {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* push image to edge of page */
+}
+
+.split-screen img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.split-screen-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
 /* sass/layout.scss
 organize all section layouts
 */
@@ -177,10 +387,10 @@ footer {
   }
   aside {
     justify-content: flex-start;
-    padding-top: 20vh;
     position: --webkit-sticky; /* safari */
     position: sticky;
     top: 60px;
+    padding-top: 20vh;
     height: 100vh;
   }
   main {
@@ -256,337 +466,6 @@ footer {
   .about3 img {
     order: -1;
   }
-}
-/* main.scss
-imports all partials and compiles into main.css
-*/
-/* _components.scss
-create generic components used in multiple sections
-*/
-.button {
-  display: block;
-  border-radius: 20px;
-  margin: 5px;
-  padding: 12px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-.button-resume {
-  background-color: royalblue;
-  color: white;
-}
-
-.button-resume:hover,
-.button-resume:active {
-  background-color: #3352af;
-}
-
-.button-link {
-  background-color: tomato;
-}
-
-.button-link:hover,
-.button-link:active {
-  background-color: crimson;
-}
-
-.logo-container {
-  gap: 10px;
-  margin: 10px;
-}
-
-.logo-icon {
-  height: auto;
-  color: oldlace;
-}
-
-.logo-icon:hover,
-.logo-icon:active {
-  color: darkgrey;
-}
-
-.banner-image {
-  width: auto;
-  height: auto;
-  max-height: 400px;
-  object-fit: cover;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 450px;
-  min-width: 350px;
-}
-
-.card img {
-  max-width: 350px;
-  height: auto;
-  object-fit: cover;
-}
-
-.split-screen {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; /* push image to edge of page */
-}
-
-.split-screen img {
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-}
-
-.split-screen-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-}
-
-/* main.scss
-imports all partials and compiles into main.css
-*/
-/* _base.scss
-foundational styles for whole document
-*/
-* {
-  /*border: 1px solid black; /* apply outline to all elements for visualization during debugging */
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-html {
-  /* set background to sidebar color so
-   * it fits when screen expanded beyond
-   * maximum width */
-  background-color: #2c2626;
-}
-
-body {
-  /* set background to off-white so it's
-   * easier on the eyes and to put a normal
-   * color over the above html background
-   * color */
-  background-color: #EFEFEF;
-}
-
-/* navigation content */
-nav {
-  background-color: #291f1e;
-}
-
-nav .logo-link {
-  text-decoration: none;
-  height: 100%;
-}
-
-nav .logo {
-  border-radius: 100%;
-  max-height: 50px;
-  max-width: auto;
-  margin: 5px;
-}
-
-nav .menu-hamburger {
-  text-decoration: none;
-  aspect-ratio: 1;
-  color: #dee8f7;
-  background-color: #142b71;
-}
-
-nav .menu-container {
-  background-color: #4c3837;
-}
-
-nav .menu-links {
-  margin: 0;
-  padding: 0;
-}
-
-nav .menu-item {
-  color: white;
-  text-decoration: none;
-  padding: 16px 0 16px 0;
-}
-
-nav .menu-item:hover,
-nav .menu-item:active {
-  background-color: #756361;
-}
-
-/* welcome content */
-header {
-  padding: 10px;
-}
-
-.welcome-container {
-  text-align: center;
-}
-
-.img-welcome {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 100%;
-  max-width: 250px;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1; /* square aspect ratio */
-  object-fit: cover;
-}
-
-/* sidebar content */
-aside {
-  text-align: center;
-  padding: 10px;
-  background-color: #2c2626;
-  color: white;
-}
-
-/* main content */
-main * {
-  padding: 10px;
-}
-
-/* project section */
-.project-container {
-  background-color: lightsteelblue;
-}
-
-/* skills section */
-.skills-item-header {
-  color: white;
-  background-color: #f64740;
-}
-
-/* footer section */
-footer {
-  padding: 20px;
-  color: white;
-  background-color: #223877;
-}
-
-* {
-  /*border: 1px solid black; /* apply outline to all elements for visualization */
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-html {
-  /* set background to sidebar color so
-   * it fits when screen expanded beyond
-   * maximum width */
-  background-color: #2c2626;
-}
-
-body {
-  /* set background to off-white so it's
-   * easier on the eyes and to put a normal
-   * color over the above html background
-   * color */
-  background-color: #EFEFEF;
-}
-
-/* navigation content */
-nav {
-  background-color: #291f1e;
-}
-
-nav .logo-link {
-  text-decoration: none;
-  height: 100%;
-}
-
-nav .logo {
-  border-radius: 100%;
-  max-height: 50px;
-  max-width: auto;
-  margin: 5px;
-}
-
-nav .menu-hamburger {
-  text-decoration: none;
-  aspect-ratio: 1;
-  color: #dee8f7;
-  background-color: #142b71;
-}
-
-nav .menu-container {
-  background-color: #4c3837;
-}
-
-nav .menu-links {
-  margin: 0;
-  padding: 0;
-}
-
-nav .menu-item {
-  color: white;
-  text-decoration: none;
-  padding: 16px 0 16px 0;
-}
-
-nav .menu-item:hover,
-nav .menu-item:active {
-  background-color: #756361;
-}
-
-/* welcome content */
-header {
-  padding: 10px;
-}
-
-.welcome-container {
-  text-align: center;
-}
-
-.img-welcome {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 100%;
-  max-width: 250px;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1; /* square aspect ratio */
-  object-fit: cover;
-}
-
-/* sidebar content */
-aside {
-  text-align: center;
-  padding: 10px;
-  background-color: #2c2626;
-  color: white;
-}
-
-/* main content */
-main * {
-  padding: 10px;
-}
-
-/* project section */
-.project-container {
-  background-color: lightsteelblue;
-}
-
-/* skills section */
-.skills-item-header {
-  color: white;
-  background-color: #f64740;
-}
-
-/* footer section */
-footer {
-  padding: 20px;
-  color: white;
-  background-color: #223877;
 }
 
 /*# sourceMappingURL=main.css.map */

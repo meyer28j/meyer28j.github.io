@@ -2,7 +2,7 @@
 imports all partials and compiles into main.css
 */
 
-@use 'layout.scss';
-@use 'components.scss';
 @use 'base.scss';
+@use 'components.scss';
+@use 'layout.scss';
 
