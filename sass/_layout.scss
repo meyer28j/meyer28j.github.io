@@ -9,10 +9,35 @@ $breakpoint-lg: 1200px;
 
 $nav-height: 60px;
 
-body {
+@mixin grid-template-auto {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
+}
+
+@mixin flex-row-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+
+@mixin flex-col-even {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@mixin flex-col-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body {
+    @include grid-template-auto;
     grid-template-areas:
         "nav"
         "header"
@@ -26,10 +51,7 @@ body {
 
 nav {
     grid-area: nav;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-row-between;
     gap: sizes.$md;
     position: fixed;
     top: 0;
@@ -39,11 +61,8 @@ nav {
     z-index: 100; 
 
     .button-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include flex-row-between;
         gap: sizes.$md;
-        align-items: center;
         height: 100%;
     }
 
@@ -84,19 +103,13 @@ header {
     margin-top: $nav-height; /* avoid content overlay with nav */
 
     .welcome-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        @include flex-col-even;
     }
 }
 
 aside {
     grid-area: aside;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+        @include flex-col-even;
 }
 
 main {
@@ -104,22 +117,16 @@ main {
 
     /* about section */
     .about-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flex-col-center;
 
         .about1 {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex-col-center;
         }
     }
 
     /*project section */
     .project-container {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
+        @include grid-template-auto;
         grid-template-areas:
             "project-header"
             "projects";
@@ -132,9 +139,7 @@ main {
 
         .projects {
             grid-area: projects;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex-col-center;
         }
 
     /* skills section */
@@ -209,8 +214,7 @@ footer {
     }
 
     main {
-        grid-template-columns: auto;
-        grid-template-rows: auto;
+        @include grid-template-auto;
         grid-template-areas:    
             "about-container"
             "project-container"
@@ -264,19 +268,8 @@ footer {
 
 /* desktop */
 @media (min-width: $breakpoint-lg) {
-    body {
-        grid-template-columns: 8fr 1fr;
-        grid-template-areas:
-        "nav nav"
-        "header aside"
-        "main aside"
-        "footer footer"
-    }
-
     .about-container {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
+        @include grid-template-auto;  
         grid-template-areas:
         "about1 about1"
         "about2 about3"; 
