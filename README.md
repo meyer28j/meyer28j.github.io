@@ -1,5 +1,9 @@
 # meyer28j.github.io
 
+## Compilation
+
+You can compile the SASS files by running ```sass sass/main.scss main.css```
+
 ## Assignment 4 Changes
 
 The primary styles.css file was refactored into many partial SASS files under sass/ then collected and compiled through sass/main.scss into the final stylesheet main.css. The SASS files are organized by function rather than section, with classes being modified in specific ways within each partial file.
@@ -10,7 +14,7 @@ Partial SASS files:
 3. \_layout.scss - handles grid/flexbox layout parameters for all major sections and containers, including layout changes at breakpoints. It does NOT include some flexbox structures used for small components, such as aligning logos within their container or aligning an image for a particular section.
 4. \_components.scss - configures all generic component classes such as cards and split-screen.
 5. \_base.scss - applies the other partials and handles the foundational elements, such as applying color, font, spacing, etc.
-6. \_main.scss - imports partials to be compiled into the final main.css.
+6. main.scss - imports partials to be compiled into the final main.css.
 
 
 ## Assignment 3 Changes
