@@ -28,66 +28,65 @@ body {
 /* navigation content */
 nav {
     background-color: colors.$bg-nav;
-}
 
-nav .logo-link {
-    text-decoration: none;
-    height: 100%;
-}
+    .logo-link {
+        text-decoration: none;
+        height: 100%;
+    }
 
-nav .logo {
-    border-radius: 100%;
-    max-height: 50px;
-    max-width: auto;
-    margin: sizes.$xs;
-}
+    .logo {
+        border-radius: 100%;
+        max-height: 50px;
+        max-width: auto;
+        margin: sizes.$xs;
+    }
 
-nav .menu-hamburger {
-    text-decoration: none;
-    aspect-ratio: 1;
-    color: colors.$hamburger;
-    background-color: colors.$bg-hamburger;
-}
+    .menu {
+        &-hamburger {
+            text-decoration: none;
+            aspect-ratio: 1;
+            color: colors.$hamburger;
+            background-color: colors.$bg-hamburger;
+        }
 
-nav .menu-container {
-    background-color: colors.$bg-btn-menu;
-}
+        &-container {
+            background-color: colors.$bg-btn-menu;
+        }
 
-nav .menu-links {
-    margin: 0;
-    padding: 0;
-}
+        &-links {
+            margin: 0;
+            padding: 0;
+        }
 
-nav .menu-item {
-    color: colors.$text-light;
-    text-decoration: none;
-    padding: sizes.$md-btn 0 sizes.$md-btn 0;
-}
+        &-item {
+            color: colors.$text-light;
+            text-decoration: none;
+            padding: sizes.$md-btn 0 sizes.$md-btn 0;
 
-nav .menu-item:hover,
-nav .menu-item:active {
-    background-color: colors.$bg-btn-menu-hover;
+            &:hover,
+            &:active {
+                background-color: colors.$bg-btn-menu-hover;
+            }
+        }
+    }
 }
 
 /* welcome content */
 header {
     padding: sizes.$sm;
-}
-
-.welcome-container {
     text-align: center;
-}
 
-.img-welcome {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 100%;
-    max-width: 250px;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1; /* square aspect ratio */
-    object-fit: cover;
+    .img-welcome {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+        max-width: 250px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1; /* square aspect ratio */
+        object-fit: cover;
+    }
 }
 
 /* sidebar content */

@@ -34,56 +34,44 @@ body {
 nav {
   background-color: #291f1e;
 }
-
 nav .logo-link {
   text-decoration: none;
   height: 100%;
 }
-
 nav .logo {
   border-radius: 100%;
   max-height: 50px;
   max-width: auto;
   margin: 5px;
 }
-
 nav .menu-hamburger {
   text-decoration: none;
   aspect-ratio: 1;
   color: #dee8f7;
   background-color: #142b71;
 }
-
 nav .menu-container {
   background-color: #4c3837;
 }
-
 nav .menu-links {
   margin: 0;
   padding: 0;
 }
-
 nav .menu-item {
   color: white;
   text-decoration: none;
   padding: 16px 0 16px 0;
 }
-
-nav .menu-item:hover,
-nav .menu-item:active {
+nav .menu-item:hover, nav .menu-item:active {
   background-color: #756361;
 }
 
 /* welcome content */
 header {
   padding: 10px;
-}
-
-.welcome-container {
   text-align: center;
 }
-
-.img-welcome {
+header .img-welcome {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -140,38 +128,33 @@ create generic components used in multiple sections
   font-size: 0.9rem;
   text-align: center;
 }
-
 .button-resume {
   background-color: royalblue;
   color: white;
 }
-
-.button-resume:hover,
-.button-resume:active {
+.button-resume:hover, .button-resume:active {
   background-color: #3352af;
 }
-
 .button-link {
   background-color: tomato;
 }
-
-.button-link:hover,
-.button-link:active {
+.button-link:hover, .button-link:active {
   background-color: crimson;
 }
 
 .logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
   margin: 10px;
 }
-
 .logo-icon {
   height: auto;
   color: oldlace;
 }
-
-.logo-icon:hover,
-.logo-icon:active {
+.logo:hover, .logo:active {
   color: darkgrey;
 }
 
@@ -188,13 +171,12 @@ create generic components used in multiple sections
   justify-content: center;
   align-items: center;
   max-width: 450px;
-  min-width: 150px;
 }
-
 .card img {
   max-width: 350px;
   height: auto;
   object-fit: cover;
+  min-width: 150px;
 }
 
 .split-screen {
@@ -202,13 +184,11 @@ create generic components used in multiple sections
   flex-direction: row;
   justify-content: space-around; /* push image to edge of page */
 }
-
 .split-screen img {
   object-fit: cover;
   width: 100%;
   height: auto;
 }
-
 .split-screen-body {
   display: flex;
   flex-direction: column;
@@ -228,13 +208,6 @@ body {
   margin: auto; /* center body in viewport */
   margin-top: 60px; /* ensure body is underneath navbar */
   max-width: 1320px; /* bootstrap standard */
-}
-
-.logo-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 nav {
@@ -288,8 +261,7 @@ header {
   grid-area: header;
   margin-top: 60px; /* avoid content overlay with nav */
 }
-
-.welcome-container {
+header .welcome-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -306,43 +278,37 @@ aside {
 
 main {
   grid-area: main;
+  /* about section */
+  /*project section */
+  /* skills section */
 }
-
-/* about section */
-.about-container {
+main .about-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-.about1 {
+main .about-container .about1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-/*project section */
-.project-container {
+main .project-container {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
   grid-template-areas: "project-header" "projects";
   justify-content: center;
 }
-
-.project-header {
+main .project-header {
   grid-area: project-header;
 }
-
-.projects {
+main .projects {
   grid-area: projects;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-/* skills section */
-.skills-item-header {
+main .skills-item-header {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -399,42 +365,45 @@ footer {
   main {
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas: "about-container" "projects-container" "skills-container" "experience-container";
+    grid-template-areas: "about-container" "project-container" "skills-container" "experience-container";
   }
-  .projects {
+  main .project-container {
+    grid-area: "project-container";
+  }
+  main .project-container .projects {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .project-container img {
+  main .project-container .projects img {
     max-height: 300px;
   }
-  .skills {
+  main .project-container .skills {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
   }
-  .skill-item {
+  main .project-container .skill-item {
     max-width: 350px;
   }
-  .experience-container {
+  main .project-container .experience-container {
     display: flex;
     flex-direction: column;
   }
-  .experience-container img {
+  main .project-container .experience-container img {
     max-height: 500px;
     flex-shrink: 1;
   }
-  .experience-container .split-screen-body {
+  main .project-container .experience-container .split-screen-body {
     justify-content: flex-start;
   }
-  footer {
+  main footer {
     z-index: 10;
   }
+  /* desktop */
 }
-/* desktop */
-@media (min-width: 1200px) {
+@media (min-width: 576px) and (min-width: 1200px) {
   body {
     grid-template-columns: 8fr 1fr;
     grid-template-areas: "nav nav" "header aside" "main aside" "footer footer";

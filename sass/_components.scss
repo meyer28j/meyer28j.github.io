@@ -14,40 +14,47 @@ create generic components used in multiple sections
     font-weight: bold;
     font-size: 0.9rem;
     text-align: center;
+
+    &-resume {
+        background-color: colors.$bg-btn-resume;
+        color: colors.$text-light;
+
+        &:hover,
+        &:active {
+            background-color: colors.$bg-btn-resume-hover;
+        }
+    }
+
+    &-link {
+        background-color: colors.$bg-btn-primary;
+
+        &:hover,
+        &:active {
+            background-color: colors.$bg-btn-primary-hover;
+        }
+    }
 }
 
-.button-resume {
-    background-color: colors.$bg-btn-resume;
-    color: colors.$text-light;
-}
+.logo {
 
-.button-resume:hover,
-.button-resume:active {
-    background-color: colors.$bg-btn-resume-hover;
-}
+    &-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: sizes.$sm;
+        margin: sizes.$sm;
+    }
 
-.button-link {
-    background-color: colors.$bg-btn-primary;
-}
+    &-icon {
+        height: auto;
+        color: colors.$logo;
+    }
 
-.button-link:hover, 
-.button-link:active {
-    background-color: colors.$bg-btn-primary-hover;
-}
-
-.logo-container {
-    gap: sizes.$sm;
-    margin: sizes.$sm;
-}
-
-.logo-icon {
-    height: auto;
-    color: colors.$logo;
-}
-
-.logo-icon:hover,
-.logo-icon:active {
-    color: colors.$logo-hover;
+    &:hover,
+    &:active {
+        color: colors.$logo-hover;
+    }
 }
 
 .banner-image {
@@ -63,33 +70,35 @@ create generic components used in multiple sections
     justify-content: center;
     align-items: center;
     max-width: 450px;
-    min-width: 150px;
+
+    img {
+        max-width: 350px; 
+        height: auto;
+        object-fit: cover;
+        min-width: 150px;
+    }
 }
 
-.card img {
-    max-width: 350px; 
-    height: auto;
-    object-fit: cover;
-}
+
 
 .split-screen {
     display: flex;
     flex-direction: row;
     justify-content: space-around; /* push image to edge of page */
-}
 
-.split-screen img {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-}
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+    }
 
-.split-screen-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+    &-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
 }
 
 
