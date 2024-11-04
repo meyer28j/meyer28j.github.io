@@ -284,29 +284,19 @@ footer {
         max-height: 300px;
     }
 
-    .about1 {
-        grid-area: about1;
-    }
-
-    .about2 {
-        grid-area: about2;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    .about3 {
-        grid-area: about3;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    /* force image to top of flex column */
-    .about3 img {
-        order: -1;
+    @for $i from 1 through 3 {
+        .about#{$i} {
+            grid-area: about#{$i};
+            display: flex;
+            flex-direction: column;
+            justify-content:flex-start;
+            @if $i > 1 {
+                // apply to all but first
+                // move image to top of flex column
+                img {
+                    order: -1;
+                }
+            }
+        }
     }
 }
-
-
-

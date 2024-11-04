@@ -188,7 +188,7 @@ create generic components used in multiple sections
   justify-content: center;
   align-items: center;
   max-width: 450px;
-  min-width: 350px;
+  min-width: 150px;
 }
 
 .card img {
@@ -452,6 +452,9 @@ footer {
   }
   .about1 {
     grid-area: about1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
   .about2 {
     grid-area: about2;
@@ -459,13 +462,15 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
   }
+  .about2 img {
+    order: -1;
+  }
   .about3 {
     grid-area: about3;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
-  /* force image to top of flex column */
   .about3 img {
     order: -1;
   }
