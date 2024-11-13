@@ -1,8 +1,23 @@
 /* main.scss
-imports all partials and compiles into main.css
+imports bootstrap then all partials 
+files and compiles into main.css
 */
 
-@use 'base.scss';
-@use 'components.scss';
-@use 'layout.scss';
+/* BELOW Copied from:
+ * https://getbootstrap.com/docs/5.3/customize/sass/
+ */
+
+// Include any default variable overrides here (though functions won't be available)
+
+@use "../node_modules/bootstrap/scss/bootstrap" as *;
+
+// Then add additional custom code here
+
+/*
+ * import sass partials
+ */
+@use 'base';
+@use 'components';
+@use 'layout';
+
 
