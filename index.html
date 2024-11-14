@@ -9,7 +9,25 @@
     </head>
 
     <body>
-        <nav>
+        <nav class="navbar fixed-top navbar-expand-sm bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="welcome">
+                    <img class="logo" src="assets/logo.svg"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#welcome">Home</a>
+                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="#skills">Skills</a>
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--<nav>
             <a class="logo-link" href="#welcome"><img class="logo" src="assets/logo.svg"/></a>
             <div class="button-container">
                 <a class="button button-resume" href="assets/jacob-meyer-resume-2024.pdf" target="_blank">Grab My Resume</a>
@@ -25,7 +43,7 @@
                     <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
                 </a>
             </div>
-        </nav>
+        </nav>-->
 
         <header id="welcome" class="welcome-container">
             <img class="img-welcome" src="assets/logo-headshot.jpg">
