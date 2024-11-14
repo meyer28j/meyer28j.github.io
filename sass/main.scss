@@ -1,15 +1,20 @@
 /* main.scss
 imports bootstrap then all partials 
 files and compiles into main.css
-*/
 
-/* BELOW Copied from:
- * https://getbootstrap.com/docs/5.3/customize/sass/
+overwrites some default bootstrap variables
+
+https://getbootstrap.com/docs/5.3/customize/sass/
  */
 
 // Include any default variable overrides here (though functions won't be available)
 
-@use "../node_modules/bootstrap/scss/bootstrap" as *;
+@use "../node_modules/bootstrap/scss/bootstrap" as *;/* with (
+    $primary: tomato,
+    $secondary: royalblue,
+   $body-bg: #EFEFEF
+);
+*/
 
 // Then add additional custom code here
 

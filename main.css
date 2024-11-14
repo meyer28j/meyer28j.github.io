@@ -1,12 +1,11 @@
 @charset "UTF-8";
 /* main.scss
-imports all partials files and compiles into main.css
+imports bootstrap then all partials 
+files and compiles into main.css
 
-imports bootstrap
-*/
-/*
- * BELOW Copied from:
- * https://getbootstrap.com/docs/5.3/customize/sass/
+overwrites some default bootstrap variables
+
+https://getbootstrap.com/docs/5.3/customize/sass/
  */
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
@@ -11853,6 +11852,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* with (
+    $primary: tomato,
+    $secondary: royalblue,
+   $body-bg: #EFEFEF
+);
+*/
 /*
  * import sass partials
  */
