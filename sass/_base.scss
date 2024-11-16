@@ -25,7 +25,6 @@ nav {
 /* welcome content */
 header {
     padding: sizes.$sm;
-    text-align: center;
 
     .img-welcome {
         display: block;
@@ -42,7 +41,6 @@ header {
 
 /* sidebar content */
 aside {
-    text-align: center;
     padding: sizes.$sm;
     color: colors.$text-light;
 }

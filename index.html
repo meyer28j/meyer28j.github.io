@@ -18,7 +18,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarMenu">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
                     <div class="navbar-nav">
                         <a class="nav-link" href="#welcome">Home</a>
                         <a class="nav-link" href="#projects">Projects</a>
@@ -29,7 +29,7 @@
             </div>
         </nav>
         
-        <header id="welcome" class="welcome-container">
+        <header id="welcome" class="welcome-container text-center">
             <img class="img-welcome" src="assets/logo-headshot.jpg">
             <h1>Hi, My Name's Jacob</h1>
             <h2>I'm a Software Engineering Student at the University of Regina.</h2>
@@ -37,8 +37,8 @@
             My interests are split between obsessing over CSS in front end web-dev and nailing down efficient, interrupt-driven C code for microcontroller projects.</p>
         </header>
             
-        <aside class="bg-body-secondary">
-            <h3>Want To Contact Me?</h3>
+        <aside class="bg-body-secondary d-flex flex-column align-items-center gap-3">
+            <h3 class="text-center">Want To Contact Me?</h3>
             <a class="btn btn-primary" href="mailto:jacob.meyer144@gmail.com">Send me an Email</a>
             <a class="btn btn-secondary" href="assets/jacob-meyer-resume-2024.pdf" target="_blank">Grab My Resume</a>
             <div class="logo-container">
@@ -108,8 +108,8 @@
                 <div class="row">
                     <article class="col-12 col-md-6 col-xl-4">
                         <div class="skills-item-header">
-                            <i class="fa fa-solid fa-2x fa-laptop-code" aria-hidden="true"></i>
-                            <h3>Programmin'</h3>
+                            <i class="fa fa-solid fa-2x fa-laptop-code d-inline" aria-hidden="true"></i>
+                            <h3 class="m-0">Programmin'</h3>
                         </div>
                         <ul>
                             <li>Interrupt-driven C/C++ programs for embedded devices</li>
@@ -119,8 +119,8 @@
                     </article>  
                     <article class="col-12 col-md-6 col-xl-4">
                         <div class="skills-item-header">
-                            <i class="fa fa-solid fa-2x fa-network-wired" aria-hidden="true"></i>
-                            <h3>Networkin'</h3>
+                            <i class="fa fa-solid fa-2x fa-network-wired d-inline" aria-hidden="true"></i>
+                            <h3 class="m-0">Networkin'</h3>
                         </div>
                         <ul>
                             <li>Remote computer access and file transfer using SSH & SFTP</li>
@@ -130,8 +130,8 @@
                     </article>
                     <article class="col-12 col-md-6 offset-md-3 col-xl-4 offset-xl-0">
                         <div class="skills-item-header">
-                            <i class="fa fa-solid fa-2x fa-bullseye" aria-hidden="true"></i>
-                            <h3>Troubleshootin'</h3>
+                            <i class="fa fa-solid fa-2x fa-bullseye d-inline" aria-hidden="true"></i>
+                            <h3 class="m-0">Troubleshootin'</h3>
                         </div>
                         <p>Yes, troubleshooting is a skill. I stand by it.</p>
                         <ul>

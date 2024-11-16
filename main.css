@@ -11880,7 +11880,6 @@ nav .logo {
 /* welcome content */
 header {
   padding: 10px;
-  text-align: center;
 }
 header .img-welcome {
   display: block;
@@ -11896,7 +11895,6 @@ header .img-welcome {
 
 /* sidebar content */
 aside {
-  text-align: center;
   padding: 10px;
   color: white;
 }
@@ -12011,10 +12009,6 @@ header .welcome-container {
 
 aside {
   grid-area: aside;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
 }
 
 main {
@@ -12053,7 +12047,6 @@ main .skills-item-header {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
   gap: 10px;
 }
 
@@ -12075,7 +12068,6 @@ footer {
     grid-template-areas: "header aside" "main aside" "footer footer";
   }
   aside {
-    justify-content: flex-start;
     position: --webkit-sticky; /* safari */
     position: sticky;
     top: 0;

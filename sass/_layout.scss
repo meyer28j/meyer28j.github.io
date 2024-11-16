@@ -57,7 +57,6 @@ header {
 
 aside {
     grid-area: aside;
-        @include flex-col-even;
 }
 
 main {
@@ -95,7 +94,6 @@ main {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        align-items: center;
         gap: sizes.$sm;
     }
 }
@@ -123,7 +121,6 @@ footer {
     }
 
     aside {
-        justify-content: flex-start;
         position: --webkit-sticky; /* safari */
         position: sticky;
         top: 0;
