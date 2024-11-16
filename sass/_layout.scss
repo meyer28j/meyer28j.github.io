@@ -151,16 +151,8 @@ footer {
             }
         }
 
-        .skills {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: stretch;
-        }
-
-        .skill-item {
-            max-width: 350px;
+        .skills-container {
+            grid-area: "skills-container";
         }
 
         .experience-container {

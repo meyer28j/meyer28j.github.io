@@ -12098,15 +12098,8 @@ footer {
   main .project-container .projects img {
     max-height: 300px;
   }
-  main .project-container .skills {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-  }
-  main .project-container .skill-item {
-    max-width: 350px;
+  main .project-container .skills-container {
+    grid-area: "skills-container";
   }
   main .project-container .experience-container {
     display: flex;
