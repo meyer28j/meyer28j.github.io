@@ -38,11 +38,12 @@ create generic components used in multiple sections
     display: flex;
     flex-direction: row;
     justify-content: space-around; /* push image to edge of page */
+    align-items: stretch;
 
     img {
         object-fit: cover;
-        width: 100%;
-        height: auto;
+        flex: 1;
+        max-width: 40%;
     }
 
     &-body {
@@ -53,5 +54,4 @@ create generic components used in multiple sections
         width: 100%;
     }
 }
-
 

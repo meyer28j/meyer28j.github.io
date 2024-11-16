@@ -11959,11 +11959,12 @@ create generic components used in multiple sections
   display: flex;
   flex-direction: row;
   justify-content: space-around; /* push image to edge of page */
+  align-items: stretch;
 }
 .split-screen img {
   object-fit: cover;
-  width: 100%;
-  height: auto;
+  flex: 1;
+  max-width: 40%;
 }
 .split-screen-body {
   display: flex;
@@ -12083,6 +12084,9 @@ footer {
   }
   main footer {
     z-index: 10;
+  }
+  main .split-screen img {
+    max-width: 100%;
   }
   /* desktop */
 }
