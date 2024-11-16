@@ -7,8 +7,6 @@ organize all section layouts
 $breakpoint-md: 576px;
 $breakpoint-lg: 1200px;
 
-$nav-height: 60px;
-
 @mixin grid-template-auto {
     display: grid;
     grid-template-columns: auto;
@@ -39,68 +37,18 @@ $nav-height: 60px;
 body {
     @include grid-template-auto;
     grid-template-areas:
-        "nav"
         "header"
         "aside"
         "main"
         "footer";
     margin: auto; /* center body in viewport */
-    margin-top: $nav-height; /* ensure body is underneath navbar */
     max-width: 1320px; /* bootstrap standard */
-}
-
-nav {
-    grid-area: nav;
-    @include flex-row-between;
-    gap: sizes.$md;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: $nav-height;
-    z-index: 100; 
-
-    .button-container {
-        @include flex-row-between;
-        gap: sizes.$md;
-        height: 100%;
-    }
-
-    .menu {
-   
-        &-hamburger {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;   
-        }
-
-        &-container {
-            position: absolute;
-            top: 0;
-            right: 0;
-            margin: $nav-height 0 0 0; /*height of nav*/
-            display: none;
-        }
-
-        &-links {
-            align-items: center;
-            text-align: center;
-            width: 200px;
-            height: 100%;
-        }
-
-        &-item {
-            display: block; /*make each element block clickable*/
-            width: 100%;
-        }
-    }
 }
 
 /* welcome content */
 header {
     grid-area: header;
-    margin-top: $nav-height; /* avoid content overlay with nav */
+    margin-top: 12vh; /* avoid content overlay with nav */
 
     .welcome-container {
         @include flex-col-even;
@@ -169,47 +117,17 @@ footer {
     body {
         grid-template-columns: 8fr 1fr;
         grid-template-areas:
-            "nav nav"
             "header aside"
             "main aside"
             "footer footer";
     }
 
-    nav {
-        .menu {
-            &-container {
-                display: inherit;
-                position: relative;
-                margin: 0;
-                height: 100%;
-            }
-
-            &-links {
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-end;
-                align-items: stretch;
-                width: auto;
-            }
-
-            &-item {
-                display: flex;
-                align-items: center;
-                padding: sizes.$md;
-            }
-
-            &-hamburger {
-                display: none;
-            }
-        }
-    }
-    
     aside {
         justify-content: flex-start;
         position: --webkit-sticky; /* safari */
         position: sticky;
-        top: $nav-height;
-        padding-top: 20vh;
+        top: 0;
+        padding-top: 30vh;
         height: 100vh;
     }
 
