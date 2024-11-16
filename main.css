@@ -11869,6 +11869,10 @@ contains variables for padding and margins
   font-family: Arial, Helvetica, sans-serif;
 }
 
+img {
+  object-fit: cover;
+}
+
 /* navigation content */
 nav .logo {
   border-radius: 100%;
@@ -11949,20 +11953,6 @@ create generic components used in multiple sections
   height: auto;
   max-height: 400px;
   object-fit: cover;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 450px;
-}
-.card img {
-  max-width: 350px;
-  height: auto;
-  object-fit: cover;
-  min-width: 150px;
 }
 
 .split-screen {
@@ -12087,19 +12077,12 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  main .project-container .projects img {
-    max-height: 300px;
-  }
   main .project-container .skills-container {
     grid-area: "skills-container";
   }
   main .project-container .experience-container {
     display: flex;
     flex-direction: column;
-  }
-  main .project-container .experience-container img {
-    max-height: 500px;
-    flex-shrink: 1;
   }
   main .project-container .experience-container .split-screen-body {
     justify-content: flex-start;

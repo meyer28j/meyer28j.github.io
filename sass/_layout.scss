@@ -142,10 +142,6 @@ footer {
         .projects {
             flex-direction: row;
             flex-wrap: wrap;
-
-            img {
-                max-height: 300px;
-            }
         }
 
         .skills-container {
@@ -156,13 +152,8 @@ footer {
             display: flex;
             flex-direction: column;
 
-            img {
-                max-height: 500px;
-                flex-shrink: 1;
-            }
-
             .split-screen-body {
-                // force every image to right side
+                // force every image to left side
                 justify-content: flex-start;
             }
         }

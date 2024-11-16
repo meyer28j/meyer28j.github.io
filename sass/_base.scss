@@ -10,6 +10,10 @@ foundational styles for whole document
     font-family: Arial, Helvetica, sans-serif;
 } 
 
+img {
+  object-fit: cover;
+}
+
 /* navigation content */
 
 nav {
