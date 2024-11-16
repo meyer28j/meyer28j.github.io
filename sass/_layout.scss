@@ -48,7 +48,7 @@ body {
 /* welcome content */
 header {
     grid-area: header;
-    margin-top: 12vh; /* avoid content overlay with nav */
+    margin-top: 16vh; /* avoid content overlay with nav */
 
     .welcome-container {
         @include flex-col-even;

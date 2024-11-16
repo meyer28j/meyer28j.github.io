@@ -10,25 +10,9 @@ foundational styles for whole document
     font-family: Arial, Helvetica, sans-serif;
 } 
 
-html {
-    /* set background to sidebar color so
-     * it fits when screen expanded beyond
-     * maximum width */
-    background-color: colors.$bg-side;
-}
-
-body {
-    /* set background to off-white so it's
-     * easier on the eyes and to put a normal
-     * color over the above html background
-     * color */
-    background-color: colors.$bg-body;
-}
-
 /* navigation content */
 
 nav {
-
     .logo {
         border-radius: 100%;
         max-height: 50px;
@@ -60,7 +44,6 @@ header {
 aside {
     text-align: center;
     padding: sizes.$sm;
-    background-color: colors.$bg-side;
     color: colors.$text-light;
 }
 

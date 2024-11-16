@@ -4,36 +4,6 @@ create generic components used in multiple sections
 
 @use 'colors.scss' as colors;
 @use 'spacing.scss' as sizes;
-.button {
-    display: block;
-    border-radius: 20px;
-    margin: sizes.$sm;
-    padding: sizes.$sm-btn;
-    text-decoration: none;
-    color: colors.$text-light;
-    font-weight: bold;
-    font-size: 0.9rem;
-    text-align: center;
-
-    &-resume {
-        background-color: colors.$bg-btn-resume;
-        color: colors.$text-light;
-
-        &:hover,
-        &:active {
-            background-color: colors.$bg-btn-resume-hover;
-        }
-    }
-
-    &-link {
-        background-color: colors.$bg-btn-primary;
-
-        &:hover,
-        &:active {
-            background-color: colors.$bg-btn-primary-hover;
-        }
-    }
-}
 
 .logo {
 
