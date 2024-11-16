@@ -11990,12 +11990,6 @@ header {
   grid-area: header;
   margin-top: 16vh; /* avoid content overlay with nav */
 }
-header .welcome-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
 
 aside {
   grid-area: aside;
