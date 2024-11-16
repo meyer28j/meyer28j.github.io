@@ -4,6 +4,39 @@
 
 You can compile the SASS files by running ```sass sass/main.scss main.css```
 
+## Assignment 5 Changes
+
+1. Modifying Bootstrap variables
+    - change color of primary/secondary buttons
+    - change default background colors
+    - change border-radius of buttons
+    - change font-size of h1
+
+2. Changed navbar to use Bootstrap navbar component
+    - remove all custom SCSS for nav element
+
+3. Other Bootstrap components
+    - Bootstrap cards for Projects section
+    - Replace all buttons with Bootstrap Buttons
+    - Bootstrap jumbotron for Welcome section 
+
+4. Bootstrap grid system
+    - Replace skills section layout with Bootstrap grid
+        - 3rd item stays centered but same width when 1st and 2nd unstack
+        - finally matches the wireframe! :)
+    - Replace project card layout with Bootstrap grid
+
+5. Utility classes
+    - Navbar links aligned to right side when displayed on larger screens
+    - Replace sidebar flexbox with Bootstrap classes
+    - Vertically align text in skill section headers by removing h3 margin
+    - Horizontally align welcome text
+    - Bootstrap gap used for project cards and aside flexbox
+    - Refactored about to use Bootstrap flex
+
+6. Other changes
+    - Fixed about split-screen image overflow on chromium-based browsers... finally
+
 ## Assignment 4 Changes
 
 The primary ```styles.css``` file was refactored into many partial SASS files under ```sass/``` then collected and compiled through ```sass/main.scss``` into the final stylesheet ```main.css```. The SASS files are organized by function rather than section, with classes being modified in specific ways within each partial file.
