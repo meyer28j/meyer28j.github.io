@@ -9,12 +9,17 @@ https://getbootstrap.com/docs/5.3/customize/sass/
 
 // Include any default variable overrides here (though functions won't be available)
 
-@use "../node_modules/bootstrap/scss/bootstrap" as *;/* with (
+@use "../node_modules/bootstrap/scss/bootstrap" as * with (
     $primary: tomato,
     $secondary: royalblue,
-   $body-bg: #EFEFEF
+    $body-bg: #EFEFEF,
+    $body-secondary-color: white,   // aside
+    $body-secondary-bg: #291F1E,    // aside
+    $btn-border-radius: 20px,
+    $h1-font-size: 4rem,
+    $spacer: 2rem
 );
-*/
+
 
 // Then add additional custom code here
 
