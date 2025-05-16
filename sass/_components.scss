@@ -42,8 +42,8 @@ create generic components used in multiple sections
 
     img {
         object-fit: cover;
-        flex: 1;
         max-width: 40%;
+        height: auto;
     }
 
     &-body {
@@ -51,7 +51,6 @@ create generic components used in multiple sections
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        width: 100%;
     }
 }
 

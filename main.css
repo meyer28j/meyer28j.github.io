@@ -11963,15 +11963,14 @@ create generic components used in multiple sections
 }
 .split-screen img {
   object-fit: cover;
-  flex: 1;
   max-width: 40%;
+  height: auto;
 }
 .split-screen-body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
 }
 
 /* sass/layout.scss
@@ -12065,15 +12064,18 @@ footer {
     grid-template-rows: auto;
     grid-template-areas: "about-container" "project-container" "skills-container" "experience-container";
   }
+  main .about-container {
+    grid-area: about-container;
+  }
   main .project-container {
-    grid-area: "project-container";
+    grid-area: project-container;
   }
   main .project-container .projects {
     flex-direction: row;
     flex-wrap: wrap;
   }
   main .project-container .skills-container {
-    grid-area: "skills-container";
+    grid-area: skills-container;
   }
   main .project-container .experience-container {
     display: flex;
@@ -12086,7 +12088,7 @@ footer {
     z-index: 10;
   }
   main .split-screen img {
-    max-width: 100%;
+    max-width: 50%;
   }
   /* desktop */
 }

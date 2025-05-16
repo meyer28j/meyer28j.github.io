@@ -132,8 +132,12 @@ footer {
             "skills-container"
             "experience-container";
 
+        .about-container {
+            grid-area: about-container;
+        }
+
         .project-container {
-            grid-area: "project-container";
+            grid-area: project-container;
 
         .projects {
             flex-direction: row;
@@ -141,7 +145,7 @@ footer {
         }
 
         .skills-container {
-            grid-area: "skills-container";
+            grid-area: skills-container;
         }
 
         .experience-container {
@@ -160,7 +164,7 @@ footer {
     }
 
     .split-screen img {
-        max-width: 100%;
+        max-width: 50%;
     }
 }
 
