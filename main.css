@@ -11988,7 +11988,9 @@ body {
 /* welcome content */
 header {
   grid-area: header;
-  margin-top: 16vh; /* avoid content overlay with nav */
+  margin-top: 120px; /* avoid content overlay with nav */
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 aside {
@@ -12070,29 +12072,29 @@ footer {
   main .project-container {
     grid-area: project-container;
   }
-  main .project-container .projects {
+  main .projects {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  main .project-container .skills-container {
+  main .skills-container {
     grid-area: skills-container;
   }
-  main .project-container .experience-container {
+  main .experience-container {
     display: flex;
     flex-direction: column;
   }
-  main .project-container .experience-container .split-screen-body {
+  main .experience-container .split-screen-body {
     justify-content: flex-start;
   }
-  main footer {
+  footer {
     z-index: 10;
   }
-  main .split-screen img {
+  .split-screen img {
     max-width: 50%;
   }
-  /* desktop */
 }
-@media (min-width: 576px) and (min-width: 1200px) {
+/* desktop */
+@media (min-width: 1200px) {
   .about-container {
     display: grid;
     grid-template-columns: auto;

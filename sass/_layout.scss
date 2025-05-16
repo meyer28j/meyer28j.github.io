@@ -48,7 +48,9 @@ body {
 /* welcome content */
 header {
     grid-area: header;
-    margin-top: 16vh; /* avoid content overlay with nav */
+    margin-top: 120px; /* avoid content overlay with nav */
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 
 aside {
@@ -138,6 +140,7 @@ footer {
 
         .project-container {
             grid-area: project-container;
+        }
 
         .projects {
             flex-direction: row;
@@ -198,5 +201,4 @@ footer {
             }
         }
     }
-}
 }
