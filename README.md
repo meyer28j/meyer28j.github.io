@@ -1,8 +1,15 @@
 # meyer28j.github.io
 
+## Summary
+
+This is my personal portfolio site extended from the assignment series as part of my university elective ENSE496AH: Responsive Web Design. Visit the site at [meyer28j.github.io](meyer28j.github.io).
+
 ## Compilation
 
-You can compile the SASS files by running ```sass sass/main.scss main.css```
+You can compile the SASS files by running `sass sass/main.scss main.css`
+
+<details>
+<summary>Assignment Submission Change Logs</summary>
 
 ## Assignment 5 Changes
 
@@ -39,16 +46,15 @@ You can compile the SASS files by running ```sass sass/main.scss main.css```
 
 ## Assignment 4 Changes
 
-The primary ```styles.css``` file was refactored into many partial SASS files under ```sass/``` then collected and compiled through ```sass/main.scss``` into the final stylesheet ```main.css```. The SASS files are organized by function rather than section, with classes being modified in specific ways within each partial file.
+The primary `styles.css` file was refactored into many partial SASS files under `sass/` then collected and compiled through `sass/main.scss` into the final stylesheet `main.css`. The SASS files are organized by function rather than section, with classes being modified in specific ways within each partial file.
 
 Partial SASS files:
-1. ```\_colors.scss``` - stores all variables for colors to be applied in other partials.
-2. ```\_spacing.scss``` - stores all variables for padding and margin spacing to be applied in other partials.
-3. ```\_layout.scss``` - handles grid/flexbox layout parameters for all major sections and containers, including layout changes at breakpoints. It does NOT include some flexbox structures used for small components, such as aligning logos within their container or aligning an image for a particular section.
-4. ```\_components.scss``` - configures all generic component classes such as cards and split-screen.
-5. ```\_base.scss``` - applies the other partials and handles the foundational elements, such as applying color, font, spacing, etc.
-6. ```main.scss``` - imports partials to be compiled into the final main.css.
-
+1. `\_colors.scss` - stores all variables for colors to be applied in other partials.
+2. `\_spacing.scss` - stores all variables for padding and margin spacing to be applied in other partials.
+3. `\_layout.scss` - handles grid/flexbox layout parameters for all major sections and containers, including layout changes at breakpoints. It does NOT include some flexbox structures used for small components, such as aligning logos within their container or aligning an image for a particular section.
+4. `\_components.scss` - configures all generic component classes such as cards and split-screen.
+5. `\_base.scss` - applies the other partials and handles the foundational elements, such as applying color, font, spacing, etc.
+6. `main.scss` - imports partials to be compiled into the final main.css.
 
 ## Assignment 3 Changes
 
@@ -75,4 +81,4 @@ No issues were seen.
 2. Instead of hiding sidebar on mobile, use it to replace the "Here's my resume" sections
     - effectively the same thing, but sidebar includes extra content not present in the "Here's my resume" sections
 
-
+</details>
