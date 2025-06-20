@@ -12022,6 +12022,9 @@ footer {
   main .about-container {
     grid-area: about-container;
   }
+  main .about-container .banner-image {
+    max-height: 400px;
+  }
   main .project-container {
     grid-area: project-container;
   }
@@ -12058,6 +12061,9 @@ footer {
   }
   .about-container img {
     max-height: 300px;
+  }
+  .about-container .banner-image {
+    max-height: 500px;
   }
   .about1 {
     grid-area: about1;
@@ -12109,8 +12115,12 @@ create generic components used in multiple sections
 .banner-image {
   width: auto;
   height: auto;
-  max-height: 400px;
+  max-height: 300px;
   object-fit: cover;
+  padding-left: 0;
+  margin-left: -22px;
+  margin-right: -22px;
+  padding-right: 0;
 }
 
 .split-screen {

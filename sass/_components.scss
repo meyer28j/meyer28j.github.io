@@ -30,8 +30,12 @@ create generic components used in multiple sections
 .banner-image {
     width: auto; 
     height: auto;
-    max-height: 400px;
+    max-height: 300px;
     object-fit: cover;
+    padding-left: 0;
+    margin-left: -22px;
+    margin-right: -22px;
+    padding-right: 0;
 }
 
 .split-screen {

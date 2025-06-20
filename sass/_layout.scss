@@ -136,6 +136,10 @@ footer {
 
         .about-container {
             grid-area: about-container;
+
+            .banner-image {
+              max-height: 400px;
+            }
         }
 
         .project-container {
@@ -183,6 +187,9 @@ footer {
 
         img {
             max-height: 300px;
+        }
+        .banner-image {
+          max-height: 500px;
         }
     }
 
