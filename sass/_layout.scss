@@ -6,6 +6,7 @@ organize all section layouts
 
 $breakpoint-md: 576px;
 $breakpoint-lg: 1200px;
+$breakpoint-xl: 1320px;
 
 @mixin grid-template-auto {
     display: grid;
@@ -42,7 +43,7 @@ body {
         "main"
         "footer";
     margin: auto; /* center body in viewport */
-    max-width: 1320px; /* bootstrap standard */
+    max-width: $breakpoint-xl; 
 }
 
 /* welcome content */

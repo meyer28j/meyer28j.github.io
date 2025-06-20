@@ -11935,7 +11935,7 @@ body {
   grid-template-rows: auto;
   grid-template-areas: "header" "aside" "main" "footer";
   margin: auto; /* center body in viewport */
-  max-width: 1320px; /* bootstrap standard */
+  max-width: 1320px;
 }
 
 /* welcome content */
