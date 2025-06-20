@@ -11926,53 +11926,6 @@ footer {
   background-color: #223877;
 }
 
-/* _base.scss
-foundational styles for whole document
-*/
-/* _components.scss
-create generic components used in multiple sections
-*/
-.logo-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin: 10px;
-}
-.logo-icon {
-  height: auto;
-  color: oldlace;
-}
-.logo:hover, .logo:active {
-  color: darkgrey;
-}
-
-.banner-image {
-  width: auto;
-  height: auto;
-  max-height: 400px;
-  object-fit: cover;
-}
-
-.split-screen {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; /* push image to edge of page */
-  align-items: stretch;
-}
-.split-screen img {
-  object-fit: cover;
-  max-width: 40%;
-  height: auto;
-}
-.split-screen-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
 /* sass/layout.scss
 organize all section layouts
 */
@@ -12130,6 +12083,52 @@ footer {
   .about3 img {
     order: -1;
   }
+}
+/* _base.scss
+foundational styles for whole document
+*/
+/* _components.scss
+create generic components used in multiple sections
+*/
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+.logo-icon {
+  height: auto;
+  color: oldlace;
+}
+.logo:hover, .logo:active {
+  color: darkgrey;
+}
+
+.banner-image {
+  width: auto;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.split-screen {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* push image to edge of page */
+  align-items: stretch;
+}
+.split-screen img {
+  object-fit: cover;
+  max-width: 40%;
+  height: auto;
+}
+.split-screen-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */
