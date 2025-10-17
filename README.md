@@ -1,12 +1,20 @@
 # meyer28j.github.io
 
-## Summary
-
-This is my personal portfolio site extended from the assignment series as part of my university elective ENSE496AH: Responsive Web Design. Visit the site at [meyer28j.github.io](meyer28j.github.io).
+This is my personal portfolio site extended from the assignment series as part of my university elective ENSE496AH: Responsive Web Design at the University of Regina. Visit the site at [meyer28j.github.io](meyer28j.github.io).
 
 ## Compilation
 
 You can compile the SASS files by running `sass sass/main.scss main.css`
+
+## Redesign & Refactor
+
+### Education Details
+
+TODO: Create an interactive tree diagram of the different skill groups and their applications I learned in university.
+- The diagram should branch out into derivative subjects, starting with broad topics and branching into more detailed topics
+- Each node should be one or a few words on a topic
+- When a node is clicked, it expands (exclusively, closing other expansions) into a card that provides a description of the skill and any projects completed, if applicable
+- A tabbed header allows for an alternative view as a list of cards ordered by either Breadth-First Search or Depth-First search, where switching tabs switches the order of the list
 
 <details>
 <summary>Assignment Submission Change Logs</summary>
