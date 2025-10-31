@@ -9,6 +9,7 @@ $btn-margin-default: 10px;
 $btn-lift: 8px; 
 $btn-darken: 30%;
 $btn-border-default: 3px;
+$btn-y-transform: $btn-border-default * 2.5;
 
 .logo {
 
@@ -76,53 +77,58 @@ $btn-border-default: 3px;
 @mixin btn-color($base-color, $text-color: white) {
     // inner button, contains content
     @include btn-base;
+  
+    $dark-color: darken($base-color, $btn-darken);
+
     background-color: $base-color;
     color: $text-color;
-    border: $btn-border-default solid darken($base-color, $btn-darken);
+    border: $btn-border-default solid var(--dark-color);
     transition: all 0.15s ease;
-} 
+}
 
-@mixin btn-lift($base-color) {
+@mixin btn-lift {
     // button container, translates child component for lift effect
     // note: uses inner button border color for background to project image of border extending
     @include btn-base;
 
-    $dark-color: darken($base-color, $btn-darken);
-    $btn-y-transform: $btn-border-default * 2.5;
+    background-color: var(--dark-color);
 
-    background-color: $dark-color;
     margin: $btn-margin-default;
     padding: 0;
     border: 0;
+
     & > * {
+        transition: transform 0.15s ease;
         transform: translateY(-$btn-y-transform);
     }
 
-    &:hover {
-      & > * {
+    &:hover > * {
           transform: translateY(-$btn-y-transform - $btn-lift);
-      }
     }
 
-    &:active {
-      & > * {
+    &:active > * {
           transform: translateY(0);
       }
-    }
 }
 
 .btn-lift {
-  @include btn-lift(colors.$primary);
+    @include btn-lift;
+
+    background-color: var(--dark-color);
+}
+
+.btn-lift:has(.btn-red) {
+  --dark-color: #{darken(colors.$primary, $btn-darken)};
+}
+
+.btn-lift:has(.btn-blue) {
+  --dark-color: #{darken(colors.$secondary, $btn-darken)};
 }
 
 .btn-red {
-  @include btn-color(colors.$primary);
+    @include btn-color(colors.$primary);
 }
 
-.btn-primary {
-  @include btn-lift(colors.$primary);
-}
-
-.btn-secondary {
-  @include btn-lift(colors.$secondary);
+.btn-blue {
+    @include btn-color(colors.$secondary);
 }

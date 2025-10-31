@@ -12148,12 +12148,14 @@ create generic components used in multiple sections
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  background-color: rgb(148, 21.95215311, 0);
+  background-color: var(--dark-color);
   margin: 10px;
   padding: 0;
   border: 0;
+  background-color: var(--dark-color);
 }
 .btn-lift > * {
+  transition: transform 0.15s ease;
   transform: translateY(-7.5px);
 }
 .btn-lift:hover > * {
@@ -12161,6 +12163,14 @@ create generic components used in multiple sections
 }
 .btn-lift:active > * {
   transform: translateY(0);
+}
+
+.btn-lift:has(.btn-red) {
+  --dark-color: rgb(148, 21.95215311, 0);
+}
+
+.btn-lift:has(.btn-blue) {
+  --dark-color: rgb(18.6818181818, 43.5909090909, 118.3181818182);
 }
 
 .btn-red {
@@ -12173,11 +12183,11 @@ create generic components used in multiple sections
   cursor: pointer;
   background-color: #ff4d2e;
   color: white;
-  border: 3px solid rgb(148, 21.95215311, 0);
+  border: 3px solid var(--dark-color);
   transition: all 0.15s ease;
 }
 
-.btn-primary {
+.btn-blue {
   display: inline-block;
   padding: 0.5rem 0.5rem;
   border-radius: 2rem;
@@ -12185,42 +12195,10 @@ create generic components used in multiple sections
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  background-color: rgb(148, 21.95215311, 0);
-  margin: 10px;
-  padding: 0;
-  border: 0;
-}
-.btn-primary > * {
-  transform: translateY(-7.5px);
-}
-.btn-primary:hover > * {
-  transform: translateY(-15.5px);
-}
-.btn-primary:active > * {
-  transform: translateY(0);
-}
-
-.btn-secondary {
-  display: inline-block;
-  padding: 0.5rem 0.5rem;
-  border-radius: 2rem;
-  font-size: 1rem;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  background-color: rgb(18.6818181818, 43.5909090909, 118.3181818182);
-  margin: 10px;
-  padding: 0;
-  border: 0;
-}
-.btn-secondary > * {
-  transform: translateY(-7.5px);
-}
-.btn-secondary:hover > * {
-  transform: translateY(-15.5px);
-}
-.btn-secondary:active > * {
-  transform: translateY(0);
+  background-color: royalblue;
+  color: white;
+  border: 3px solid var(--dark-color);
+  transition: all 0.15s ease;
 }
 
 /*# sourceMappingURL=main.css.map */
