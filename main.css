@@ -12143,5 +12143,40 @@ create generic components used in multiple sections
 .btn-primary {
   color: white;
 }
+.btn-primary:hover {
+  color: white;
+}
+
+.btn-primary {
+  margin: 10px;
+  border-top: 0 solid #ff4d2e;
+  border-bottom: 0 solid rgb(97, 14.3875598086, 0);
+  transition: margin 0.2s ease, border 0.2s ease, background-color 0.2s ease;
+}
+.btn-primary:hover {
+  margin-top: 5px;
+  border-bottom: 10px solid rgb(97, 14.3875598086, 0);
+}
+.btn-primary:active {
+  transition-duration: 0;
+  margin-top: 7.5px;
+  border-bottom: 2px solid rgb(97, 14.3875598086, 0);
+}
+
+.btn-secondary {
+  margin: 10px;
+  border-top: 0 solid royalblue;
+  border-bottom: 0 solid rgb(11.7272727273, 27.3636363636, 74.2727272727);
+  transition: margin 0.2s ease, border 0.2s ease, background-color 0.2s ease;
+}
+.btn-secondary:hover {
+  margin-top: 5px;
+  border-bottom: 10px solid rgb(11.7272727273, 27.3636363636, 74.2727272727);
+}
+.btn-secondary:active {
+  transition-duration: 0;
+  margin-top: 7.5px;
+  border-bottom: 2px solid rgb(11.7272727273, 27.3636363636, 74.2727272727);
+}
 
 /*# sourceMappingURL=main.css.map */

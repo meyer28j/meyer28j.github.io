@@ -5,6 +5,10 @@ create generic components used in multiple sections
 @use 'colors.scss' as colors;
 @use 'spacing.scss' as sizes;
 
+$btn-margin-default: 10px;
+$btn-lift: 5px;
+$tbn-lift-pressed: 0.3;
+
 .logo {
 
     &-container {
@@ -59,5 +63,36 @@ create generic components used in multiple sections
 }
 
 .btn-primary {
-  color: white;
+    color: white;
+
+    &:hover {
+      color: white;
+    }
+}
+
+@mixin btn-lift($base-color, $darken-amount: 40%) {
+    margin: $btn-margin-default;
+    border-top: 0 solid $base-color;
+    border-bottom: 0 solid darken($base-color, $darken-amount);
+    transition: margin 0.2s ease,
+                border 0.2s ease,
+                background-color 0.2s ease;
+
+    &:hover {
+      margin-top: $btn-margin-default - $btn-lift;
+      border-bottom: $btn-lift solid darken($base-color, $darken-amount);
+    }
+
+    &:active {
+      margin-top: $btn-margin-default - (1 - $btn-lift * $btn-lift-pressed);
+      border-bottom: $btn-lift * $btn-lift-pressed solid darken($base-color, $darken-amount);
+    }
+}
+
+.btn-primary {
+  @include btn-lift(colors.$primary);
+}
+
+.btn-secondary {
+  @include btn-lift(colors.$secondary);
 }
