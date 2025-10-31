@@ -90,9 +90,6 @@ $btn-border-default: 3px;
     $dark-color: darken($base-color, $btn-darken);
     $btn-y-transform: $btn-border-default * 2.5;
 
-    position: relative;
-    display: inline-block;
-
     background-color: $dark-color;
     margin: $btn-margin-default;
     padding: 0;

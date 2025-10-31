@@ -12148,8 +12148,6 @@ create generic components used in multiple sections
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  position: relative;
-  display: inline-block;
   background-color: rgb(148, 21.95215311, 0);
   margin: 10px;
   padding: 0;
@@ -12187,8 +12185,6 @@ create generic components used in multiple sections
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  position: relative;
-  display: inline-block;
   background-color: rgb(148, 21.95215311, 0);
   margin: 10px;
   padding: 0;
@@ -12212,8 +12208,6 @@ create generic components used in multiple sections
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  position: relative;
-  display: inline-block;
   background-color: rgb(18.6818181818, 43.5909090909, 118.3181818182);
   margin: 10px;
   padding: 0;
