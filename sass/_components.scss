@@ -9,7 +9,7 @@ $btn-margin-default: 10px;
 $btn-lift: 8px; 
 $btn-lift-pressed: $btn-lift * 0.5;
 $btn-darken: 30%;
-$btn-border-default: 4px;
+$btn-border-default: 3px;
 
 .logo {
 
@@ -67,41 +67,53 @@ $btn-border-default: 4px;
 @mixin btn-base {
   display: inline-block;
   padding: 0.5rem 0.5rem;
+  border-radius: 2rem;
   font-size: 1rem;
   text-align: center;
   text-decoration: none;
-  border-radius: 2rem;
+  background-color: none;
   cursor: pointer;
 }
 
-@mixin btn-lift($base-color, $text-color: white, $darken-amount: 30%) {
+@mixin btn-color($base-color, $text-color: white) {
+    // inner button, contains content
     @include btn-base;
-
-    $dark-color: darken($base-color, $darken-amount);
-    $btn-border-scalar: 2.5;
-
     background-color: $base-color;
     color: $text-color;
+    border: $btn-border-default solid darken($base-color, $btn-darken);
+} 
+
+@mixin btn-lift($base-color, $text-color: white) {
+    // button container, extends bottom border and shrinks top margin for lift effect
+    @include btn-base;
+
+    $dark-color: darken($base-color, $btn-darken);
+    $btn-border-scalar: 2.5;
+
+    background-color: $dark-color;
     margin: $btn-margin-default;
-    border: $btn-border-default solid $dark-color;
+    padding: 0;
+    border: 0;
     border-bottom: ($btn-border-default * $btn-border-scalar) solid $dark-color;
     transition: all 0.2s ease;
 
     &:hover {
-      background-color: $base-color;
       margin-top: $btn-margin-default - $btn-lift;
       border-bottom: ($btn-border-default * $btn-border-scalar + $btn-lift) solid $dark-color;
     }
 
     &:active {
-      background-color: $base-color;
-      margin-top: $btn-margin-default + $btn-border-default;
-      border-bottom: $btn-border-default solid $dark-color;
+      margin-top: $btn-margin-default + $btn-border-default * $btn-border-scalar;
+      border-bottom: 0 solid $dark-color;
     }
 }
 
-.btn-red {
+.btn-lift {
   @include btn-lift(colors.$primary);
+}
+
+.btn-red {
+  @include btn-color(colors.$primary);
 }
 
 .btn-primary {
