@@ -7,7 +7,6 @@ create generic components used in multiple sections
 
 $btn-margin-default: 10px;
 $btn-lift: 8px; 
-$btn-lift-pressed: $btn-lift * 0.5;
 $btn-darken: 30%;
 $btn-border-default: 3px;
 
@@ -71,7 +70,6 @@ $btn-border-default: 3px;
   font-size: 1rem;
   text-align: center;
   text-decoration: none;
-  background-color: none;
   cursor: pointer;
 }
 
@@ -81,30 +79,37 @@ $btn-border-default: 3px;
     background-color: $base-color;
     color: $text-color;
     border: $btn-border-default solid darken($base-color, $btn-darken);
+    transition: all 0.15s ease;
 } 
 
-@mixin btn-lift($base-color, $text-color: white) {
+@mixin btn-lift($base-color) {
     // button container, extends bottom border and shrinks top margin for lift effect
     @include btn-base;
 
     $dark-color: darken($base-color, $btn-darken);
-    $btn-border-scalar: 2.5;
+    $btn-y-transform: $btn-border-default * 2.5;
+
+    position: relative;
+    display: inline-block;
 
     background-color: $dark-color;
     margin: $btn-margin-default;
     padding: 0;
     border: 0;
-    border-bottom: ($btn-border-default * $btn-border-scalar) solid $dark-color;
-    transition: all 0.2s ease;
+    & > * {
+        transform: translateY(-$btn-y-transform);
+    }
 
     &:hover {
-      margin-top: $btn-margin-default - $btn-lift;
-      border-bottom: ($btn-border-default * $btn-border-scalar + $btn-lift) solid $dark-color;
+      & > * {
+          transform: translateY(-$btn-y-transform - $btn-lift);
+      }
     }
 
     &:active {
-      margin-top: $btn-margin-default + $btn-border-default * $btn-border-scalar;
-      border-bottom: 0 solid $dark-color;
+      & > * {
+          transform: translateY(0);
+      }
     }
 }
 

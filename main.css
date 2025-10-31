@@ -12147,22 +12147,22 @@ create generic components used in multiple sections
   font-size: 1rem;
   text-align: center;
   text-decoration: none;
-  background-color: none;
   cursor: pointer;
+  position: relative;
+  display: inline-block;
   background-color: rgb(148, 21.95215311, 0);
   margin: 10px;
   padding: 0;
   border: 0;
-  border-bottom: 7.5px solid rgb(148, 21.95215311, 0);
-  transition: all 0.2s ease;
 }
-.btn-lift:hover {
-  margin-top: 2px;
-  border-bottom: 15.5px solid rgb(148, 21.95215311, 0);
+.btn-lift > * {
+  transform: translateY(-7.5px);
 }
-.btn-lift:active {
-  margin-top: 17.5px;
-  border-bottom: 0 solid rgb(148, 21.95215311, 0);
+.btn-lift:hover > * {
+  transform: translateY(-15.5px);
+}
+.btn-lift:active > * {
+  transform: translateY(0);
 }
 
 .btn-red {
@@ -12172,11 +12172,11 @@ create generic components used in multiple sections
   font-size: 1rem;
   text-align: center;
   text-decoration: none;
-  background-color: none;
   cursor: pointer;
   background-color: #ff4d2e;
   color: white;
   border: 3px solid rgb(148, 21.95215311, 0);
+  transition: all 0.15s ease;
 }
 
 .btn-primary {
@@ -12186,22 +12186,22 @@ create generic components used in multiple sections
   font-size: 1rem;
   text-align: center;
   text-decoration: none;
-  background-color: none;
   cursor: pointer;
+  position: relative;
+  display: inline-block;
   background-color: rgb(148, 21.95215311, 0);
   margin: 10px;
   padding: 0;
   border: 0;
-  border-bottom: 7.5px solid rgb(148, 21.95215311, 0);
-  transition: all 0.2s ease;
 }
-.btn-primary:hover {
-  margin-top: 2px;
-  border-bottom: 15.5px solid rgb(148, 21.95215311, 0);
+.btn-primary > * {
+  transform: translateY(-7.5px);
 }
-.btn-primary:active {
-  margin-top: 17.5px;
-  border-bottom: 0 solid rgb(148, 21.95215311, 0);
+.btn-primary:hover > * {
+  transform: translateY(-15.5px);
+}
+.btn-primary:active > * {
+  transform: translateY(0);
 }
 
 .btn-secondary {
@@ -12211,22 +12211,22 @@ create generic components used in multiple sections
   font-size: 1rem;
   text-align: center;
   text-decoration: none;
-  background-color: none;
   cursor: pointer;
+  position: relative;
+  display: inline-block;
   background-color: rgb(18.6818181818, 43.5909090909, 118.3181818182);
   margin: 10px;
   padding: 0;
   border: 0;
-  border-bottom: 7.5px solid rgb(18.6818181818, 43.5909090909, 118.3181818182);
-  transition: all 0.2s ease;
 }
-.btn-secondary:hover {
-  margin-top: 2px;
-  border-bottom: 15.5px solid rgb(18.6818181818, 43.5909090909, 118.3181818182);
+.btn-secondary > * {
+  transform: translateY(-7.5px);
 }
-.btn-secondary:active {
-  margin-top: 17.5px;
-  border-bottom: 0 solid rgb(18.6818181818, 43.5909090909, 118.3181818182);
+.btn-secondary:hover > * {
+  transform: translateY(-15.5px);
+}
+.btn-secondary:active > * {
+  transform: translateY(0);
 }
 
 /*# sourceMappingURL=main.css.map */
