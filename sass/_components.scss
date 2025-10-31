@@ -83,7 +83,8 @@ $btn-border-default: 3px;
 } 
 
 @mixin btn-lift($base-color) {
-    // button container, extends bottom border and shrinks top margin for lift effect
+    // button container, translates child component for lift effect
+    // note: uses inner button border color for background to project image of border extending
     @include btn-base;
 
     $dark-color: darken($base-color, $btn-darken);
