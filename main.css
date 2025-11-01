@@ -12195,6 +12195,9 @@ create generic components used in multiple sections
   border: 3px solid var(--dark-color);
   transition: all 0.15s ease;
 }
+.btn-red:hover {
+  background-color: rgb(255, 98.7177033493, 71.5);
+}
 
 .btn-blue {
   display: inline-block;
@@ -12208,6 +12211,9 @@ create generic components used in multiple sections
   color: white;
   border: 3px solid var(--dark-color);
   transition: all 0.15s ease;
+}
+.btn-blue:hover {
+  background-color: rgb(87.0227272727, 122.3863636364, 228.4772727273);
 }
 
 /*# sourceMappingURL=main.css.map */

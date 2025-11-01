@@ -8,6 +8,7 @@ create generic components used in multiple sections
 $btn-margin-default: 10px;
 $btn-lift: 8px; 
 $btn-darken: 30%;
+$btn-lighten: 5%;
 $btn-border-default: 3px;
 $btn-y-transform: $btn-border-default * 2.5;
 
@@ -79,11 +80,16 @@ $btn-y-transform: $btn-border-default * 2.5;
     @include btn-base;
   
     $dark-color: darken($base-color, $btn-darken);
+    $light-color: lighten($base-color, $btn-lighten);
 
     background-color: $base-color;
     color: $text-color;
     border: $btn-border-default solid var(--dark-color);
     transition: all 0.15s ease;
+
+    &:hover {
+        background-color: $light-color;
+    }
 }
 
 @mixin btn-lift {
