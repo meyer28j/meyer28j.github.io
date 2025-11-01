@@ -8,13 +8,33 @@ You can compile the SASS files by running `sass sass/main.scss main.css`
 
 ## Redesign & Refactor
 
-### Education Details
+### Overview & Sections
+
+- Remove skills section (provided in resume)
+- Update education section to be tree diagram including skills, links to related projects/repos
+- Update projects section to be carousel 
+    - alternate, of side-by-side image/card with accordion menu that displays different cards (like MAC website)
+    - "big" projects focused, could link to tree diagram projects
+- Update hero section to be side-by-side of flute image with frosted-glass side content (text)
+    - gradient or sharp "plate-glass" edge between the sides
+- Update about-me to focus silos of my life
+    - dance, music/drumming, engineering & personal projects
+
+### Education Section
 
 TODO: Create an interactive tree diagram of the different skill groups and their applications I learned in university.
 - The diagram should branch out into derivative subjects, starting with broad topics and branching into more detailed topics
 - Each node should be one or a few words on a topic
 - When a node is clicked, it expands (exclusively, closing other expansions) into a card that provides a description of the skill and any projects completed, if applicable
+    - alternate, slide-over menu (like mobile nav menu)
+    - could provide a space on the side, 1/4 or 1/3 that is populated with each card info
 - A tabbed header allows for an alternative view as a list of cards ordered by either Breadth-First Search or Depth-First search, where switching tabs switches the order of the list
+
+### Projects
+
+- include: DLD, simon, traffic lights, level-detector, fitness site, mortar simulator, (movie API?), figma deep-rock
+- carousel on both mobile & desktop
+    - alternate, accordion menu: side by side menu & content on desktop, content within accordion frame on mobile
 
 <details>
 <summary>Assignment Submission Change Logs</summary>
