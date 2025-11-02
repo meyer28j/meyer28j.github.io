@@ -11942,8 +11942,6 @@ body {
 header {
   grid-area: header;
   margin-top: 120px; /* avoid content overlay with nav */
-  padding-left: 10vw;
-  padding-right: 10vw;
 }
 
 aside {
@@ -12109,6 +12107,25 @@ create generic components used in multiple sections
 }
 .logo:hover, .logo:active {
   color: darkgrey;
+}
+
+.hero-glassmorphism {
+  width: 100%;
+  min-height: 80vh;
+  background: url("./assets/flute.jpg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+}
+
+.glass-card {
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .banner-image {
