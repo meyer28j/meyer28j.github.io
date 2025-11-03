@@ -5,7 +5,7 @@ create generic components used in multiple sections
 @use 'colors.scss' as colors;
 @use 'spacing.scss' as sizes;
 
-$glass-color: rgba(255, 255, 255, 0.1);
+$glass-opacity: 0.3;
 $glass-blur: 12px;
 $glass-border-color: rgba(255, 255, 255, 0.3);
 $glass-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -42,7 +42,11 @@ $btn-y-transform: $btn-border-default * 2.5;
 
 .glass-card {
     z-index: 10;
-    background: $glass-color;
+    background: rgba(
+        red(colors.$primary),
+        green(colors.$primary),
+        blue(colors.$primary),
+        $glass-opacity);
     border-radius: 16px;
     backdrop-filter: blur($glass-blur);
     -webkit-backdrop-filter: blur($glass-blur);
