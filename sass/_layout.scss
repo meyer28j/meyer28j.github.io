@@ -136,8 +136,7 @@ footer {
         grid-template-areas:    
             "about-container"
             "project-container"
-            "skills-container"
-            "experience-container";
+            "skills-container";
 
         .about-container {
             grid-area: about-container;
@@ -158,16 +157,6 @@ footer {
 
         .skills-container {
             grid-area: skills-container;
-        }
-
-        .experience-container {
-            display: flex;
-            flex-direction: column;
-
-            .split-screen-body {
-                // force every image to left side
-                justify-content: flex-start;
-            }
         }
     }
 

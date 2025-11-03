@@ -12037,7 +12037,7 @@ footer {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas: "about-container" "project-container" "skills-container" "experience-container";
+    grid-template-areas: "about-container" "project-container" "skills-container";
   }
   main .about-container {
     grid-area: about-container;
@@ -12054,13 +12054,6 @@ footer {
   }
   main .skills-container {
     grid-area: skills-container;
-  }
-  main .experience-container {
-    display: flex;
-    flex-direction: column;
-  }
-  main .experience-container .split-screen-body {
-    justify-content: flex-start;
   }
   footer {
     z-index: 10;
