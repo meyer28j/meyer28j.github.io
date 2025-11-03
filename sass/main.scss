@@ -9,9 +9,11 @@ https://getbootstrap.com/docs/5.3/customize/sass/
 
 // Include any default variable overrides here (though functions won't be available)
 
+@use 'colors.scss' as colors;
+
 @use "../node_modules/bootstrap/scss/bootstrap" as * with (
-    $primary: #ff4d2e,
-    $secondary: royalblue,
+    $primary: colors.$primary,
+    $secondary: colors.$secondary,
     $body-bg: #EFEFEF,
     $body-secondary-color: white,   // aside
     $body-secondary-bg: #291F1E,    // aside
