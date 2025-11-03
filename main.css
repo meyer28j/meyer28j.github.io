@@ -12200,11 +12200,11 @@ create generic components used in multiple sections
 }
 
 .btn-lift:has(.btn-red) {
-  --dark-color: rgb(148, 21.95215311, 0);
+  --dark-color: rgb(18.5, 32.5, 21.5);
 }
 
 .btn-lift:has(.btn-blue) {
-  --dark-color: rgb(18.6818181818, 43.5909090909, 118.3181818182);
+  --dark-color: rgb(62.125, 38.9866071429, 8.875);
 }
 
 .btn-red {
@@ -12215,13 +12215,13 @@ create generic components used in multiple sections
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  background-color: #ff4d2e;
+  background-color: #4a8256;
   color: white;
   border: 3px solid var(--dark-color);
   transition: all 0.15s ease;
 }
 .btn-red:hover {
-  background-color: rgb(255, 98.7177033493, 71.5);
+  background-color: rgb(83.25, 146.25, 96.75);
 }
 
 .btn-blue {
@@ -12232,13 +12232,13 @@ create generic components used in multiple sections
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  background-color: royalblue;
+  background-color: #c47b1c;
   color: white;
   border: 3px solid var(--dark-color);
   transition: all 0.15s ease;
 }
 .btn-blue:hover {
-  background-color: rgb(87.0227272727, 122.3863636364, 228.4772727273);
+  background-color: rgb(218.3125, 137.0022321429, 31.1875);
 }
 
 /*# sourceMappingURL=main.css.map */
