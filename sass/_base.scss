@@ -29,18 +29,6 @@ nav {
 /* welcome content */
 header {
     padding: sizes.$sm;
-
-    .img-welcome {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 100%;
-        max-width: 250px;
-        width: 100%;
-        height: auto;
-        aspect-ratio: 1; /* square aspect ratio */
-        object-fit: cover;
-    }
 }
 
 .hero-glassmorphism {
@@ -60,6 +48,19 @@ main * {
     padding: sizes.$sm;
 }
 
+.about-container {
+    .img-welcome {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+        max-width: 250px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1; /* square aspect ratio */
+        object-fit: cover;
+    }
+}
 /* project section */
 .project-container {
     background-color: colors.$bg-projects;

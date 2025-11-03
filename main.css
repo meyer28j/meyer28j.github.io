@@ -11885,17 +11885,6 @@ nav .logo {
 header {
   padding: 10px;
 }
-header .img-welcome {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 100%;
-  max-width: 250px;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1; /* square aspect ratio */
-  object-fit: cover;
-}
 
 .hero-glassmorphism {
   width: 100%;
@@ -11912,6 +11901,18 @@ aside {
 /* main content */
 main * {
   padding: 10px;
+}
+
+.about-container .img-welcome {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1; /* square aspect ratio */
+  object-fit: cover;
 }
 
 /* project section */
