@@ -8,6 +8,8 @@ $breakpoint-md: 576px;
 $breakpoint-lg: 1200px;
 $breakpoint-xl: 1320px;
 
+$nav-height: 80px;
+
 @mixin grid-template-auto {
     display: grid;
     grid-template-columns: auto;
@@ -46,10 +48,14 @@ body {
     max-width: $breakpoint-xl; 
 }
 
+nav {
+  min-height: $nav-height;
+}
+
 /* welcome content */
 header {
     grid-area: header;
-    margin-top: 120px; /* avoid content overlay with nav */
+    margin-top: $nav-height; /* avoid content overlay with nav */
 }
 
 aside {

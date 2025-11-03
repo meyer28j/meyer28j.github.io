@@ -11899,7 +11899,7 @@ header .img-welcome {
 
 .hero-glassmorphism {
   width: 100%;
-  min-height: 80vh;
+  min-height: 70vh;
   background: url("./assets/flute.jpg") no-repeat center center/cover;
 }
 
@@ -11944,10 +11944,14 @@ body {
   max-width: 1320px;
 }
 
+nav {
+  min-height: 80px;
+}
+
 /* welcome content */
 header {
   grid-area: header;
-  margin-top: 120px; /* avoid content overlay with nav */
+  margin-top: 80px; /* avoid content overlay with nav */
 }
 
 aside {
