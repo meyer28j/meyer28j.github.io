@@ -10,8 +10,7 @@ You can compile the SASS files by running `sass sass/main.scss main.css`
 
 ### Overview & Sections
 
-- Remove skills section (provided in resume)
-- Update education section to be tree diagram including skills, links to related projects/repos
+- Update skills section to be tree diagram including skills, links to related projects/repos
 - Update projects section to be carousel 
     - alternate, of side-by-side image/card with accordion menu that displays different cards (like MAC website)
     - "big" projects focused, could link to tree diagram projects
