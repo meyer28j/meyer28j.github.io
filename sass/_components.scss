@@ -39,13 +39,6 @@ $btn-y-transform: $btn-border-default * 2.5;
     }
 }
 
-.hero-glassmorphism {
-    width: 100%;
-    min-height: 80vh;
-    background: url('./assets/flute.jpg') no-repeat center center/cover;
-    display: flex;
-    align-items: center;
-}
 
 .glass-card {
     z-index: 10;
@@ -56,6 +49,12 @@ $btn-y-transform: $btn-border-default * 2.5;
     border: 1px solid $glass-border-color;
     box-shadow: $glass-box-shadow;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+
+    p {
+      color: white;
+      opacity: 80%;
+      font-weight: bold;
+    }
 }
 
 .banner-image {

@@ -11897,6 +11897,12 @@ header .img-welcome {
   object-fit: cover;
 }
 
+.hero-glassmorphism {
+  width: 100%;
+  min-height: 80vh;
+  background: url("./assets/flute.jpg") no-repeat center center/cover;
+}
+
 /* sidebar content */
 aside {
   padding: 10px;
@@ -12109,14 +12115,6 @@ create generic components used in multiple sections
   color: darkgrey;
 }
 
-.hero-glassmorphism {
-  width: 100%;
-  min-height: 80vh;
-  background: url("./assets/flute.jpg") no-repeat center center/cover;
-  display: flex;
-  align-items: center;
-}
-
 .glass-card {
   z-index: 10;
   background: rgba(255, 255, 255, 0.1);
@@ -12126,6 +12124,11 @@ create generic components used in multiple sections
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+.glass-card p {
+  color: white;
+  opacity: 80%;
+  font-weight: bold;
 }
 
 .banner-image {

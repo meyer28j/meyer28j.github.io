@@ -43,6 +43,12 @@ header {
     }
 }
 
+.hero-glassmorphism {
+    width: 100%;
+    min-height: 80vh;
+    background: url('./assets/flute.jpg') no-repeat center center/cover;
+}
+
 /* sidebar content */
 aside {
     padding: sizes.$sm;
